@@ -1,0 +1,177 @@
+{
+  "phase": "Phase 2",
+  "brand": {
+    "id": "WOMEN",
+    "name": "女装",
+    "source_brand": "ROSEMOO"
+  },
+  "channel": {
+    "id": "DIRECT",
+    "name": "直营",
+    "source_channel": "直营"
+  },
+  "period": "2026-07",
+  "scope_note": "Phase 2仅使用女装直营预算源表；奥莱并入直营的跨源合并留待Phase 3。",
+  "metric": {
+    "code": "sales",
+    "name": "销售收入",
+    "unit": "CNY"
+  },
+  "target": 1580000.0,
+  "actual": 1429654.5,
+  "gap": 150345.5,
+  "completion_rate": 0.9048446202531646,
+  "status": "未达成",
+  "store_count": 11,
+  "reconciliation": {
+    "store_target_total": 1580000.0,
+    "channel_target": 1580000.0,
+    "target_variance": 0.0,
+    "store_actual_total": 1429654.5,
+    "channel_actual": 1429654.5,
+    "actual_variance": 0.0,
+    "passed": true
+  },
+  "source": {
+    "workbook": "26年 直营预算.xls",
+    "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\女装明细\\2026女装店铺利润\\26年 直营预算.xls",
+    "target": "月汇总!J3",
+    "actual": "月汇总!J46",
+    "import_batch_id": 1
+  },
+  "stores": [
+    {
+      "store_id": "WOMEN-DIRECT-BEIJING-HUAXIANG",
+      "store_name": "花乡",
+      "source_sheet": "花乡",
+      "target": 120000.0,
+      "actual": 70296.0,
+      "gap": 49704.0,
+      "completion_rate": 0.5858,
+      "status": "未达成",
+      "target_source": "26年 直营预算.xls / 花乡!J3",
+      "actual_source": "26年 直营预算.xls / 花乡!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-ANSHAN-XINMATE",
+      "store_name": "鞍山新玛特",
+      "source_sheet": "鞍山",
+      "target": 130000.0,
+      "actual": 79401.0,
+      "gap": 50599.0,
+      "completion_rate": 0.6107769230769231,
+      "status": "未达成",
+      "target_source": "26年 直营预算.xls / 鞍山!J3",
+      "actual_source": "26年 直营预算.xls / 鞍山!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-BEIJING-CAPITALAND",
+      "store_name": "北京凯德",
+      "source_sheet": "凯德",
+      "target": 120000.0,
+      "actual": 75385.0,
+      "gap": 44615.0,
+      "completion_rate": 0.6282083333333334,
+      "status": "未达成",
+      "target_source": "26年 直营预算.xls / 凯德!J3",
+      "actual_source": "26年 直营预算.xls / 凯德!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-BEIJING-SOLANA",
+      "store_name": "蓝港",
+      "source_sheet": "蓝港",
+      "target": 150000.0,
+      "actual": 98832.0,
+      "gap": 51168.0,
+      "completion_rate": 0.65888,
+      "status": "未达成",
+      "target_source": "26年 直营预算.xls / 蓝港!J3",
+      "actual_source": "26年 直营预算.xls / 蓝港!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-BEIJING-SHOUCHUANG",
+      "store_name": "北京首创",
+      "source_sheet": "北京首创",
+      "target": 150000.0,
+      "actual": 100933.0,
+      "gap": 49067.0,
+      "completion_rate": 0.6728866666666666,
+      "status": "未达成",
+      "target_source": "26年 直营预算.xls / 北京首创!J3",
+      "actual_source": "26年 直营预算.xls / 北京首创!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-DALIAN-PAVILION",
+      "store_name": "柏威年",
+      "source_sheet": "柏威年",
+      "target": 180000.0,
+      "actual": 135608.0,
+      "gap": 44392.0,
+      "completion_rate": 0.7533777777777778,
+      "status": "未达成",
+      "target_source": "26年 直营预算.xls / 柏威年!J3",
+      "actual_source": "26年 直营预算.xls / 柏威年!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-JINAN-WXC",
+      "store_name": "济南万象城",
+      "source_sheet": "济南",
+      "target": 180000.0,
+      "actual": 160298.0,
+      "gap": 19702.0,
+      "completion_rate": 0.8905444444444445,
+      "status": "未达成",
+      "target_source": "26年 直营预算.xls / 济南!J3",
+      "actual_source": "26年 直营预算.xls / 济南!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-DALIAN-JINHUI",
+      "store_name": "大连锦辉",
+      "source_sheet": "锦辉",
+      "target": 140000.0,
+      "actual": 153913.0,
+      "gap": -13913.0,
+      "completion_rate": 1.0993785714285715,
+      "status": "达成",
+      "target_source": "26年 直营预算.xls / 锦辉!J3",
+      "actual_source": "26年 直营预算.xls / 锦辉!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-DALIAN-ANSHENG",
+      "store_name": "大连安盛",
+      "source_sheet": "安盛",
+      "target": 140000.0,
+      "actual": 159813.0,
+      "gap": -19813.0,
+      "completion_rate": 1.1415214285714286,
+      "status": "达成",
+      "target_source": "26年 直营预算.xls / 安盛!J3",
+      "actual_source": "26年 直营预算.xls / 安盛!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-BEIJING-JINYUAN",
+      "store_name": "北京金源",
+      "source_sheet": "北京金源",
+      "target": 150000.0,
+      "actual": 205390.0,
+      "gap": -55390.0,
+      "completion_rate": 1.3692666666666666,
+      "status": "达成",
+      "target_source": "26年 直营预算.xls / 北京金源!J3",
+      "actual_source": "26年 直营预算.xls / 北京金源!J46"
+    },
+    {
+      "store_id": "WOMEN-DIRECT-FUXIN-XINMATE",
+      "store_name": "阜新新玛特",
+      "source_sheet": "阜新",
+      "target": 120000.0,
+      "actual": 189785.5,
+      "gap": -69785.5,
+      "completion_rate": 1.5815458333333334,
+      "status": "达成",
+      "target_source": "26年 直营预算.xls / 阜新!J3",
+      "actual_source": "26年 直营预算.xls / 阜新!J46"
+    }
+  ],
+  "generated_at": "2026-09-05T00:09:02+08:00"
+}
