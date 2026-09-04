@@ -71,7 +71,7 @@ export default function Home() {
                   const isGood = rate >= 1;
                   return (
                     <Sheet key={store.name}>
-                      <SheetTrigger render={<TableRow className="cursor-pointer transition-colors hover:bg-slate-50/90 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-teal-600" tabIndex={0} />}>
+                      <SheetTrigger nativeButton={false} render={<TableRow className="cursor-pointer transition-colors hover:bg-slate-50/90 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-teal-600" tabIndex={0} />}>
                         <TableCell><div className="store-name"><span className="store-mark"><Store size={15} /></span>{store.name}</div></TableCell>
                         <TableCell className="text-right tabular-nums">{currency.format(store.target)}</TableCell>
                         <TableCell className="text-right font-semibold tabular-nums">{currency.format(store.actual)}</TableCell>
