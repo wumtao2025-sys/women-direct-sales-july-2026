@@ -1,0 +1,982 @@
+{
+  "phase": "Phase 5",
+  "title": "新开店铺",
+  "year": 2026,
+  "actual_cutoff": "2026-07-31",
+  "import_batch_id": 1,
+  "generated_at": "2026-09-05T09:32:51+08:00",
+  "opening_rule": "实际开店数只认正式开业日期；当前来源缺失，因此不计算实际数量和完成率。",
+  "brands": [
+    {
+      "id": "WOMEN",
+      "name": "女装",
+      "annual_planned_count": 2,
+      "actual_opened_count": null,
+      "completion_rate": null,
+      "planned_by_month": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "planned_cumulative": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "actual_by_month": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "actual_cumulative": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "stores": [
+        {
+          "store_id": "NEW_9A0A2C5BD08C397B",
+          "brand_id": "WOMEN",
+          "brand_name": "女装",
+          "name": "山东寿光",
+          "channel_id": "JOINT",
+          "channel_name": "联营",
+          "planned_month": 2,
+          "plan_basis": "预算首个非零销售月份",
+          "opening_date": null,
+          "opening_status": "正式开业日期待补充",
+          "business_state": "已有经营数据",
+          "annual": {
+            "sales_target": 1100000.0,
+            "sales_actual": 402397.0,
+            "collection_target": null,
+            "collection_actual": null,
+            "profit_target": 183295.0,
+            "profit_actual": 71522.381
+          },
+          "months": [
+            {
+              "month": 1,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 0.0,
+              "profit_actual": 0.0
+            },
+            {
+              "month": 2,
+              "sales_target": 100000.0,
+              "sales_actual": 115950.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 11100.0,
+              "profit_actual": 31487.969
+            },
+            {
+              "month": 3,
+              "sales_target": 60000.0,
+              "sales_actual": 44110.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 9395.0,
+              "profit_actual": 5363.067
+            },
+            {
+              "month": 4,
+              "sales_target": 80000.0,
+              "sales_actual": 73435.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 14200.0,
+              "profit_actual": 9170.38
+            },
+            {
+              "month": 5,
+              "sales_target": 100000.0,
+              "sales_actual": 40142.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 19200.0,
+              "profit_actual": 4227.18
+            },
+            {
+              "month": 6,
+              "sales_target": 80000.0,
+              "sales_actual": 56209.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 14200.0,
+              "profit_actual": 8759.8
+            },
+            {
+              "month": 7,
+              "sales_target": 80000.0,
+              "sales_actual": 72551.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 14200.0,
+              "profit_actual": 12513.985
+            },
+            {
+              "month": 8,
+              "sales_target": 80000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 14200.0,
+              "profit_actual": null
+            },
+            {
+              "month": 9,
+              "sales_target": 80000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 14200.0,
+              "profit_actual": null
+            },
+            {
+              "month": 10,
+              "sales_target": 150000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 31700.0,
+              "profit_actual": null
+            },
+            {
+              "month": 11,
+              "sales_target": 130000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 16700.0,
+              "profit_actual": null
+            },
+            {
+              "month": 12,
+              "sales_target": 160000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 24200.0,
+              "profit_actual": null
+            }
+          ],
+          "source": {
+            "workbook": "新增-寿光、杉杉.xlsx",
+            "sheet": "山东寿光"
+          },
+          "rows": {
+            "target_sales": 3,
+            "actual_sales": 29,
+            "target_profit": 24,
+            "actual_profit": 50
+          }
+        },
+        {
+          "store_id": "NEW_52E52E4690681E78",
+          "brand_id": "WOMEN",
+          "brand_name": "女装",
+          "name": "杉杉奥莱",
+          "channel_id": "DIRECT",
+          "channel_name": "直营",
+          "planned_month": 4,
+          "plan_basis": "预算首个非零销售月份",
+          "opening_date": null,
+          "opening_status": "正式开业日期待补充",
+          "business_state": "已有经营数据",
+          "annual": {
+            "sales_target": 1750000.0,
+            "sales_actual": 800493.0,
+            "collection_target": null,
+            "collection_actual": null,
+            "profit_target": 248555.5555555555,
+            "profit_actual": 168610.051
+          },
+          "months": [
+            {
+              "month": 1,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 0.0,
+              "profit_actual": 0.0
+            },
+            {
+              "month": 2,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 0.0,
+              "profit_actual": 0.0
+            },
+            {
+              "month": 3,
+              "sales_target": null,
+              "sales_actual": 30052.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 0.0,
+              "profit_actual": 1466.78
+            },
+            {
+              "month": 4,
+              "sales_target": 160000.0,
+              "sales_actual": 142290.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 21222.2222222222,
+              "profit_actual": 33844.416
+            },
+            {
+              "month": 5,
+              "sales_target": 170000.0,
+              "sales_actual": 157560.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 23111.1111111111,
+              "profit_actual": 35322.607
+            },
+            {
+              "month": 6,
+              "sales_target": 170000.0,
+              "sales_actual": 219588.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 23111.1111111111,
+              "profit_actual": 48182.95
+            },
+            {
+              "month": 7,
+              "sales_target": 170000.0,
+              "sales_actual": 251003.0,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 23111.1111111111,
+              "profit_actual": 49793.298
+            },
+            {
+              "month": 8,
+              "sales_target": 170000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 23111.1111111111,
+              "profit_actual": null
+            },
+            {
+              "month": 9,
+              "sales_target": 200000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 28777.7777777778,
+              "profit_actual": null
+            },
+            {
+              "month": 10,
+              "sales_target": 250000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 38222.2222222222,
+              "profit_actual": null
+            },
+            {
+              "month": 11,
+              "sales_target": 210000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 30166.6666666667,
+              "profit_actual": null
+            },
+            {
+              "month": 12,
+              "sales_target": 250000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": 37722.2222222222,
+              "profit_actual": null
+            }
+          ],
+          "source": {
+            "workbook": "新增-寿光、杉杉.xlsx",
+            "sheet": "杉杉奥莱"
+          },
+          "rows": {
+            "target_sales": 3,
+            "actual_sales": 46,
+            "target_profit": 41,
+            "actual_profit": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "KIDS",
+      "name": "童装",
+      "annual_planned_count": 4,
+      "actual_opened_count": null,
+      "completion_rate": null,
+      "planned_by_month": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "planned_cumulative": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "actual_by_month": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "actual_cumulative": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "stores": [
+        {
+          "store_id": "NEW_EC46F9552A2E8945",
+          "brand_id": "KIDS",
+          "brand_name": "童装",
+          "name": "济南万象城",
+          "channel_id": "DIRECT",
+          "channel_name": "直营",
+          "planned_month": 8,
+          "plan_basis": "渠道开发计划日期（仅作计划）",
+          "opening_date": null,
+          "opening_status": "正式开业日期待补充",
+          "business_state": "仅有计划",
+          "annual": {
+            "sales_target": 600000.0,
+            "sales_actual": null,
+            "collection_target": 570000.0,
+            "collection_actual": null,
+            "profit_target": 81154.8461538461,
+            "profit_actual": null
+          },
+          "months": [
+            {
+              "month": 1,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 2,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 3,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 4,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 5,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 6,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 7,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 8,
+              "sales_target": 100000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 9,
+              "sales_target": 120000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 10,
+              "sales_target": 130000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 11,
+              "sales_target": 120000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 12,
+              "sales_target": 130000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            }
+          ],
+          "source": {
+            "workbook": "Qimoo 2025年度总结与2026年度预算1.21.xlsx",
+            "sheet": "26年新增",
+            "row": 4
+          }
+        },
+        {
+          "store_id": "NEW_DECA2A7B5674C823",
+          "brand_id": "KIDS",
+          "brand_name": "童装",
+          "name": "天津万象城",
+          "channel_id": "DIRECT",
+          "channel_name": "直营",
+          "planned_month": 8,
+          "plan_basis": "渠道开发计划日期（仅作计划）",
+          "opening_date": null,
+          "opening_status": "正式开业日期待补充",
+          "business_state": "仅有计划",
+          "annual": {
+            "sales_target": 680000.0,
+            "sales_actual": null,
+            "collection_target": 646000.0,
+            "collection_actual": null,
+            "profit_target": 87041.0256410256,
+            "profit_actual": null
+          },
+          "months": [
+            {
+              "month": 1,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 2,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 3,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 4,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 5,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 6,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 7,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 8,
+              "sales_target": 100000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 9,
+              "sales_target": 120000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 10,
+              "sales_target": 150000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 11,
+              "sales_target": 150000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 12,
+              "sales_target": 160000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            }
+          ],
+          "source": {
+            "workbook": "Qimoo 2025年度总结与2026年度预算1.21.xlsx",
+            "sheet": "26年新增",
+            "row": 5
+          }
+        },
+        {
+          "store_id": "NEW_384A01BA753A2B81",
+          "brand_id": "KIDS",
+          "brand_name": "童装",
+          "name": "西安赛格",
+          "channel_id": "DIRECT",
+          "channel_name": "直营",
+          "planned_month": 7,
+          "plan_basis": "渠道开发计划日期（仅作计划）",
+          "opening_date": null,
+          "opening_status": "正式开业日期待补充",
+          "business_state": "仅有计划",
+          "annual": {
+            "sales_target": 1439999.0,
+            "sales_actual": null,
+            "collection_target": 892799.38,
+            "collection_actual": null,
+            "profit_target": 231968.007179487,
+            "profit_actual": null
+          },
+          "months": [
+            {
+              "month": 1,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 2,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 3,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 4,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 5,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 6,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 7,
+              "sales_target": 169999.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 8,
+              "sales_target": 170000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 9,
+              "sales_target": 200000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 10,
+              "sales_target": 300000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 11,
+              "sales_target": 300000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 12,
+              "sales_target": 300000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            }
+          ],
+          "source": {
+            "workbook": "Qimoo 2025年度总结与2026年度预算1.21.xlsx",
+            "sheet": "26年新增",
+            "row": 6
+          }
+        },
+        {
+          "store_id": "NEW_0F7DB79A2FE8A0AE",
+          "brand_id": "KIDS",
+          "brand_name": "童装",
+          "name": "北京斯普瑞斯",
+          "channel_id": "DIRECT",
+          "channel_name": "直营",
+          "planned_month": 5,
+          "plan_basis": "渠道开发计划日期（仅作计划）",
+          "opening_date": null,
+          "opening_status": "正式开业日期待补充",
+          "business_state": "仅有计划",
+          "annual": {
+            "sales_target": 1760000.0,
+            "sales_actual": null,
+            "collection_target": 1320000.0,
+            "collection_actual": null,
+            "profit_target": 488842.444444444,
+            "profit_actual": null
+          },
+          "months": [
+            {
+              "month": 1,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 2,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 3,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 4,
+              "sales_target": null,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 5,
+              "sales_target": 200000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 6,
+              "sales_target": 180000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 7,
+              "sales_target": 180000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 8,
+              "sales_target": 200000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 9,
+              "sales_target": 200000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 10,
+              "sales_target": 250000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 11,
+              "sales_target": 250000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            },
+            {
+              "month": 12,
+              "sales_target": 300000.0,
+              "sales_actual": null,
+              "collection_target": null,
+              "collection_actual": null,
+              "profit_target": null,
+              "profit_actual": null
+            }
+          ],
+          "source": {
+            "workbook": "Qimoo 2025年度总结与2026年度预算1.21.xlsx",
+            "sheet": "26年新增",
+            "row": 7
+          }
+        }
+      ]
+    }
+  ],
+  "group_collection": {
+    "WOMEN": {
+      "target": 5159000.0,
+      "actual": 890201.68
+    },
+    "KIDS": {
+      "target": 2348000.0,
+      "actual": 0.0
+    }
+  },
+  "scope_notes": [
+    "女装2家来自新增经营预算，计划月由首个非零销售预算月份推定。",
+    "童装4家来自26年新增渠道开发计划，表内日期只作为计划日期。",
+    "已识别单店明细与公司新增汇总口径不完全一致，汇总差异保留，不强制拆分或分摊。"
+  ]
+}

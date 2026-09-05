@@ -119,6 +119,7 @@ footer { display:flex; justify-content:space-between; gap:1rem; padding:1rem .15
 .workbench-nav .segmented button { display:flex; align-items:center; gap:.35rem; }
 .source-mini { color:#8490a1; font-size:.7rem; }
 .loss-panel { border-color:#fecaca; }
+.new-store-note { margin-top:.85rem; }
 
 @media (max-width:900px) {
   .metric-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }

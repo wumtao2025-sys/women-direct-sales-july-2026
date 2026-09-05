@@ -1,12 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { AlertTriangle, ArrowDownRight, Banknote, Database, Landmark, TrendingUp } from 'lucide-react';
+import { AlertTriangle, ArrowDownRight, Banknote, Database, Landmark, Store, TrendingUp } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import salesData from './phase3-data.json';
 import phase4 from './phase4-data.json';
+import phase5 from './phase5-data.json';
 
 const currency = new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', maximumFractionDigits: 0 });
 const compactCurrency = new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', notation: 'compact', maximumFractionDigits: 2 });
@@ -69,10 +70,24 @@ function SalesSummary({ brandId }: { brandId: string }) {
   return <><header className="dashboard-header"><div><div className="eyebrow"><span /> 总经理经营工作台 · V1</div><h1>销售全渠道</h1><p>{brand.name} · 2026年7月 · 销售收入</p></div><div className="source-pill"><Database size={16} /> 数据截至 <span>{salesData.actual_cutoff}</span></div></header><section className="table-panel"><div className="table-heading"><div><h2>7月渠道完成情况</h2><p>Phase 3 已确认口径；完整月度交互将在经营首页阶段统一编排。</p></div></div><Table><TableHeader><TableRow><TableHead>渠道</TableHead><TableHead className="text-right">目标</TableHead><TableHead className="text-right">实际</TableHead><TableHead className="text-right">完成率</TableHead><TableHead>数据状态</TableHead></TableRow></TableHeader><TableBody>{rows.map(({channel,point}: any) => <TableRow key={channel.id}><TableCell className="font-semibold">{channel.name}</TableCell><TableCell className="text-right">{point?.target == null ? '—' : currency.format(point.target)}</TableCell><TableCell className="text-right">{point?.actual == null ? '—' : currency.format(point.actual)}</TableCell><TableCell className="text-right">{point?.completion_rate == null ? '—' : percent.format(point.completion_rate)}</TableCell><TableCell>{channel.data_state_name}</TableCell></TableRow>)}</TableBody></Table></section></>;
 }
 
+function NewStoreModule({ brandId, month, setMonth }: { brandId: string; month: number; setMonth: (value: number) => void }) {
+  const brand: any = phase5.brands.find((item) => item.id === brandId);
+  const monthPlanned = brand.planned_by_month[month - 1];
+  const cumulative = brand.planned_cumulative[month - 1];
+  return <>
+    <header className="dashboard-header"><div><div className="eyebrow"><span /> 总经理经营工作台 · V1</div><h1>新开店铺</h1><p>{brand.name} · 2026年度 / {month}月计划</p></div><div className="source-pill"><Database size={16} /> 数据截至 <span>{phase5.actual_cutoff}</span></div></header>
+    <section className="filter-bar"><label>月份<select value={month} onChange={(event) => setMonth(Number(event.target.value))}>{Array.from({length:12},(_,i)=>i+1).map((m)=><option key={m} value={m}>{m}月</option>)}</select></label><span className="filter-note">实际开店数只认正式开业日期</span></section>
+    <section className="metric-grid"><MetricCard label="年度已识别计划" value={`${brand.annual_planned_count} 家`} note="现有可确认单店计划"/><MetricCard label={`${month}月计划`} value={`${monthPlanned} 家`} note="独立月度计划" tone="teal"/><MetricCard label={`截至${month}月累计计划`} value={`${cumulative} 家`} note="不使用年度目标×时间进度" tone="amber"/><MetricCard label="实际开店" value="待确认" note="缺少正式开业日期"/></section>
+    <section className="quality-note new-store-note"><AlertTriangle size={17}/><span>{phase5.opening_rule}</span></section>
+    <section className="table-panel"><div className="table-heading"><div><h2>新店计划与经营表现</h2><p>销售、回款、经营利润沿用标准事实表；没有来源的指标保持为空。</p></div></div><div className="overflow-x-auto"><Table><TableHeader><TableRow><TableHead>店铺</TableHead><TableHead>渠道</TableHead><TableHead>计划月</TableHead><TableHead className="text-right">销售目标 / 实际</TableHead><TableHead className="text-right">回款目标 / 实际</TableHead><TableHead className="text-right">利润目标 / 实际</TableHead><TableHead>状态</TableHead></TableRow></TableHeader><TableBody>{brand.stores.map((row:any)=><TableRow key={row.store_id}><TableCell><b>{row.name}</b><div className="source-mini">{row.source.workbook} · {row.source.sheet}</div></TableCell><TableCell>{row.channel_name}</TableCell><TableCell>{row.planned_month}月<div className="source-mini">{row.plan_basis}</div></TableCell><TableCell className="text-right">{currency.format(row.annual.sales_target)} / {row.annual.sales_actual==null?'—':currency.format(row.annual.sales_actual)}</TableCell><TableCell className="text-right">{row.annual.collection_target==null?'—':currency.format(row.annual.collection_target)} / {row.annual.collection_actual==null?'—':currency.format(row.annual.collection_actual)}</TableCell><TableCell className="text-right">{currency.format(row.annual.profit_target)} / {row.annual.profit_actual==null?'—':currency.format(row.annual.profit_actual)}</TableCell><TableCell><Badge variant="outline" className="status-risk">{row.opening_status}</Badge><div className="source-mini">{row.business_state}</div></TableCell></TableRow>)}</TableBody></Table></div></section>
+  </>;
+}
+
 export default function Home() {
-  const [module, setModule] = useState<'sales' | 'collection' | 'operating_profit'>('operating_profit');
+  const [module, setModule] = useState<'sales' | 'collection' | 'operating_profit' | 'new_stores'>('new_stores');
   const [brandId, setBrandId] = useState('WOMEN');
   const [month, setMonth] = useState(7);
-  const modules = [{id:'sales',name:'销售',icon:<Landmark size={15}/>},{id:'collection',name:'回款',icon:<Banknote size={15}/>},{id:'operating_profit',name:'经营利润',icon:<TrendingUp size={15}/>}];
-  return <main className="min-h-screen bg-background text-foreground"><div className="mx-auto w-full max-w-[1480px] px-4 py-5 sm:px-7 lg:px-10"><nav className="workbench-nav"><div className="segmented">{modules.map((item: any) => <button key={item.id} className={module === item.id ? 'active' : ''} onClick={() => setModule(item.id)}>{item.icon}{item.name}</button>)}</div><div className="segmented">{phase4.collection.brands.map((item: any) => <button key={item.id} className={brandId === item.id ? 'active' : ''} onClick={() => setBrandId(item.id)}>{item.name}</button>)}</div></nav>{module === 'sales' ? <SalesSummary brandId={brandId}/> : <FinanceModule metric={module} brandId={brandId} month={month} setMonth={setMonth}/>}<footer><span>经营利润非毛利、非净利润 · 合并渠道不强拆</span><span>数据截至 2026-07-31 · 来源可追溯到单元格</span></footer></div></main>;
+  const modules = [{id:'sales',name:'销售',icon:<Landmark size={15}/>},{id:'collection',name:'回款',icon:<Banknote size={15}/>},{id:'operating_profit',name:'经营利润',icon:<TrendingUp size={15}/>},{id:'new_stores',name:'新开店铺',icon:<Store size={15}/>}];
+  const content = module === 'sales' ? <SalesSummary brandId={brandId}/> : module === 'new_stores' ? <NewStoreModule brandId={brandId} month={month} setMonth={setMonth}/> : <FinanceModule metric={module} brandId={brandId} month={month} setMonth={setMonth}/>;
+  return <main className="min-h-screen bg-background text-foreground"><div className="mx-auto w-full max-w-[1480px] px-4 py-5 sm:px-7 lg:px-10"><nav className="workbench-nav"><div className="segmented">{modules.map((item: any) => <button key={item.id} className={module === item.id ? 'active' : ''} onClick={() => setModule(item.id)}>{item.icon}{item.name}</button>)}</div><div className="segmented">{phase4.collection.brands.map((item: any) => <button key={item.id} className={brandId === item.id ? 'active' : ''} onClick={() => setBrandId(item.id)}>{item.name}</button>)}</div></nav>{content}<footer><span>新店实际数量只认正式开业日期 · 合并渠道不强拆</span><span>数据截至 2026-07-31 · 来源可追溯到单元格</span></footer></div></main>;
 }
