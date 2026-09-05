@@ -1,0 +1,676 @@
+{
+  "phase": "Phase 7",
+  "title": "经营异常中心",
+  "year": 2026,
+  "actual_cutoff": "2026-07-31",
+  "time_progress": {
+    "annual": 0.583,
+    "current_month": 1.0
+  },
+  "rules": {
+    "sales": "当前月门店完成率升序，取前5",
+    "collection": "年度渠道回款完成率升序，取前5",
+    "operating_profit": "当月亏损优先、连续亏损月数优先，再按完成率升序，取前5",
+    "new_stores": "截至7月累计销售完成率低于80%，升序取前5"
+  },
+  "thresholds": {
+    "new_store_sales_completion_rate": 0.8
+  },
+  "brands": [
+    {
+      "id": "WOMEN",
+      "name": "女装",
+      "categories": {
+        "sales": {
+          "name": "销售异常",
+          "rows": [
+            {
+              "store_id": "WOMEN-DIRECT-BEIJING-HUAXIANG",
+              "name": "花乡",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 120000.0,
+              "actual": 70296.0,
+              "completion_rate": 0.5858,
+              "time_progress": 1.0,
+              "lag_points": 0.4142,
+              "target_source": "J3",
+              "actual_source": "J46",
+              "drilldown": {
+                "module": "sales",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "WOMEN-DIRECT-BEIJING-HUAXIANG"
+              }
+            },
+            {
+              "store_id": "WOMEN-DIRECT-ANSHAN-XINMATE",
+              "name": "鞍山新玛特",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 130000.0,
+              "actual": 79401.0,
+              "completion_rate": 0.6107769230769231,
+              "time_progress": 1.0,
+              "lag_points": 0.3892230769230769,
+              "target_source": "J3",
+              "actual_source": "J46",
+              "drilldown": {
+                "module": "sales",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "WOMEN-DIRECT-ANSHAN-XINMATE"
+              }
+            },
+            {
+              "store_id": "WOMEN-DIRECT-BEIJING-CAPITALAND",
+              "name": "北京凯德",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 120000.0,
+              "actual": 75385.0,
+              "completion_rate": 0.6282083333333334,
+              "time_progress": 1.0,
+              "lag_points": 0.37179166666666663,
+              "target_source": "J3",
+              "actual_source": "J46",
+              "drilldown": {
+                "module": "sales",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "WOMEN-DIRECT-BEIJING-CAPITALAND"
+              }
+            },
+            {
+              "store_id": "WOMEN-DIRECT-BEIJING-SOLANA",
+              "name": "蓝港",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 150000.0,
+              "actual": 98832.0,
+              "completion_rate": 0.65888,
+              "time_progress": 1.0,
+              "lag_points": 0.34112,
+              "target_source": "J3",
+              "actual_source": "J46",
+              "drilldown": {
+                "module": "sales",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "WOMEN-DIRECT-BEIJING-SOLANA"
+              }
+            },
+            {
+              "store_id": "WOMEN-DIRECT-BEIJING-SHOUCHUANG",
+              "name": "北京首创",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 150000.0,
+              "actual": 100933.0,
+              "completion_rate": 0.6728866666666666,
+              "time_progress": 1.0,
+              "lag_points": 0.32711333333333337,
+              "target_source": "J3",
+              "actual_source": "J46",
+              "drilldown": {
+                "module": "sales",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "WOMEN-DIRECT-BEIJING-SHOUCHUANG"
+              }
+            }
+          ]
+        },
+        "collection": {
+          "name": "回款异常",
+          "rows": [
+            {
+              "channel_id": "DIRECT",
+              "name": "直营+奥莱",
+              "target": 23709000.0,
+              "actual": 11871071.33,
+              "completion_rate": 0.5006989468134464,
+              "time_progress": 0.583,
+              "gap": 11837928.67,
+              "target_source": {
+                "label": "直营+奥莱",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F4",
+                "value": 23709000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "直营+奥莱",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P4",
+                "value": 11871071.33,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": null
+              }
+            },
+            {
+              "channel_id": "FRANCHISE",
+              "name": "加盟",
+              "target": 47462000.0,
+              "actual": 23928664.83,
+              "completion_rate": 0.5041646965993848,
+              "time_progress": 0.583,
+              "gap": 23533335.17,
+              "target_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F6",
+                "value": 47462000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P6",
+                "value": 23928664.83,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "FRANCHISE",
+                "store_id": null
+              }
+            },
+            {
+              "channel_id": "SHOWROOM",
+              "name": "展厅",
+              "target": 2600000.0,
+              "actual": 1340416.47,
+              "completion_rate": 0.5155447961538462,
+              "time_progress": 0.583,
+              "gap": 1259583.53,
+              "target_source": {
+                "label": "展厅",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F10",
+                "value": 2600000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "展厅",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P10",
+                "value": 1340416.47,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "SHOWROOM",
+                "store_id": null
+              }
+            },
+            {
+              "channel_id": "TMALL",
+              "name": "天猫",
+              "target": 10159737.96,
+              "actual": 5278491.13,
+              "completion_rate": 0.5195499284314218,
+              "time_progress": 0.583,
+              "gap": 4881246.830000001,
+              "target_source": {
+                "label": "天猫",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F7",
+                "value": 10159737.96,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "天猫",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P7",
+                "value": 5278491.13,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "TMALL",
+                "store_id": null
+              }
+            },
+            {
+              "channel_id": "SPECIAL_SALE",
+              "name": "特卖",
+              "target": 4665000.0,
+              "actual": 2872576.04,
+              "completion_rate": 0.6157719271168275,
+              "time_progress": 0.583,
+              "gap": 1792423.96,
+              "target_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F11",
+                "value": 4665000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P11",
+                "value": 2872576.04,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "SPECIAL_SALE",
+                "store_id": null
+              }
+            }
+          ]
+        },
+        "operating_profit": {
+          "name": "利润异常",
+          "rows": [
+            {
+              "store_id": "P4_C5BB00F86989E423",
+              "name": "蓝港",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": -40317.297037037024,
+              "actual": -87477.782,
+              "completion_rate": null,
+              "loss_streak": 7,
+              "loss_state": "连续7个月亏损",
+              "target_source": "26年 直营预算.xls / 蓝港!J41",
+              "actual_source": "26年 直营预算.xls / 蓝港!J84",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "P4_C5BB00F86989E423"
+              }
+            },
+            {
+              "store_id": "P4_1891DA138C8CD464",
+              "name": "花乡",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": -7634.948571428584,
+              "actual": -19170.87000000001,
+              "completion_rate": null,
+              "loss_streak": 6,
+              "loss_state": "连续6个月亏损",
+              "target_source": "26年 直营预算.xls / 花乡!J41",
+              "actual_source": "26年 直营预算.xls / 花乡!J84",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "P4_1891DA138C8CD464"
+              }
+            },
+            {
+              "store_id": "P4_23FCE962B38769A7",
+              "name": "鞍山",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 9825.9525,
+              "actual": -347.9470000000074,
+              "completion_rate": -0.035411019949466216,
+              "loss_streak": 1,
+              "loss_state": "本月亏损",
+              "target_source": "26年 直营预算.xls / 鞍山!J41",
+              "actual_source": "26年 直营预算.xls / 鞍山!J84",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "P4_23FCE962B38769A7"
+              }
+            },
+            {
+              "store_id": "P4_55F214998F621DD0",
+              "name": "万象城",
+              "channel_id": "JOINT",
+              "channel_name": "联营",
+              "month": 7,
+              "target": 22584.615384615376,
+              "actual": 0.0,
+              "completion_rate": 0.0,
+              "loss_streak": 0,
+              "loss_state": "本月盈利",
+              "target_source": "26年联营预算- 栗娟..xls / 万象城!J24",
+              "actual_source": "26年联营预算- 栗娟..xls / 万象城!J49",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "JOINT",
+                "store_id": "P4_55F214998F621DD0"
+              }
+            },
+            {
+              "store_id": "P4_5D7EFD1BB6EE9301",
+              "name": "忻州",
+              "channel_id": "JOINT",
+              "channel_name": "联营",
+              "month": 7,
+              "target": 21500.0,
+              "actual": 0.0,
+              "completion_rate": 0.0,
+              "loss_streak": 0,
+              "loss_state": "本月盈利",
+              "target_source": "26年联营预算- 栗娟..xls / 忻州!J24",
+              "actual_source": "26年联营预算- 栗娟..xls / 忻州!J49",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "WOMEN",
+                "month": 7,
+                "channel_id": "JOINT",
+                "store_id": "P4_5D7EFD1BB6EE9301"
+              }
+            }
+          ]
+        },
+        "new_stores": {
+          "name": "新店异常",
+          "rows": [],
+          "unavailable_actual_count": 0
+        },
+        "product": {
+          "name": "商品异常",
+          "rows": null,
+          "status": "待接入商品数据"
+        }
+      }
+    },
+    {
+      "id": "KIDS",
+      "name": "童装",
+      "categories": {
+        "sales": {
+          "name": "销售异常",
+          "rows": []
+        },
+        "collection": {
+          "name": "回款异常",
+          "rows": [
+            {
+              "channel_id": "SPECIAL_SALE",
+              "name": "特卖",
+              "target": 662900.0,
+              "actual": 0.0,
+              "completion_rate": 0.0,
+              "time_progress": 0.583,
+              "gap": 662900.0,
+              "target_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F27",
+                "value": 662900.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P27",
+                "value": 0.0,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "SPECIAL_SALE",
+                "store_id": null
+              }
+            },
+            {
+              "channel_id": "JOINT",
+              "name": "联营",
+              "target": 8191174.03,
+              "actual": 4456987.39,
+              "completion_rate": 0.5441207052464492,
+              "time_progress": 0.583,
+              "gap": 3734186.6400000006,
+              "target_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F23",
+                "value": 8191174.03,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P23",
+                "value": 4456987.39,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "JOINT",
+                "store_id": null
+              }
+            },
+            {
+              "channel_id": "FRANCHISE",
+              "name": "加盟",
+              "target": 137354.0,
+              "actual": 82149.55,
+              "completion_rate": 0.5980863316685353,
+              "time_progress": 0.583,
+              "gap": 55204.45,
+              "target_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F24",
+                "value": 137354.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P24",
+                "value": 82149.55,
+                "source_file_id": 1
+              },
+              "drilldown": {
+                "module": "collection",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "FRANCHISE",
+                "store_id": null
+              }
+            }
+          ]
+        },
+        "operating_profit": {
+          "name": "利润异常",
+          "rows": [
+            {
+              "store_id": "P4_FA927E300DD81413",
+              "name": "武汉SKP",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": -23358.285714285714,
+              "actual": -81273.68,
+              "completion_rate": null,
+              "loss_streak": 7,
+              "loss_state": "连续7个月亏损",
+              "target_source": "26年直营利润童装.xls / 武汉SKP!J41",
+              "actual_source": "26年直营利润童装.xls / 武汉SKP!J84",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "P4_FA927E300DD81413"
+              }
+            },
+            {
+              "store_id": "P4_4EFDEA59241F41A4",
+              "name": "蓝港",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": -49094.56338028169,
+              "actual": -71895.67,
+              "completion_rate": null,
+              "loss_streak": 7,
+              "loss_state": "连续7个月亏损",
+              "target_source": "26年直营利润童装.xls / 蓝港!J41",
+              "actual_source": "26年直营利润童装.xls / 蓝港!J84",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "P4_4EFDEA59241F41A4"
+              }
+            },
+            {
+              "store_id": "P4_6973D63A65C28D73",
+              "name": "济南恒隆",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 0.0,
+              "actual": -51784.049999999996,
+              "completion_rate": null,
+              "loss_streak": 5,
+              "loss_state": "连续5个月亏损",
+              "target_source": "26年直营利润童装.xls / 济南恒隆!J41",
+              "actual_source": "26年直营利润童装.xls / 济南恒隆!J84",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "P4_6973D63A65C28D73"
+              }
+            },
+            {
+              "store_id": "P4_6A69A7D219CE46AC",
+              "name": "杭州大厦",
+              "channel_id": "DIRECT",
+              "channel_name": "直营",
+              "month": 7,
+              "target": 0.0,
+              "actual": -4181.6,
+              "completion_rate": null,
+              "loss_streak": 3,
+              "loss_state": "连续3个月亏损",
+              "target_source": "26年直营利润童装.xls / 杭州大厦!J41",
+              "actual_source": "26年直营利润童装.xls / 杭州大厦!J84",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "DIRECT",
+                "store_id": "P4_6A69A7D219CE46AC"
+              }
+            },
+            {
+              "store_id": "P4_87B7AE88AFAAC064",
+              "name": "抖音",
+              "channel_id": "DOUYIN",
+              "channel_name": "抖音",
+              "month": 7,
+              "target": 43634.7648958071,
+              "actual": -19389.57,
+              "completion_rate": -0.44436059289649477,
+              "loss_streak": 2,
+              "loss_state": "连续2个月亏损",
+              "target_source": "2026年天猫抖音利润表童装.xlsx / 抖音!I60",
+              "actual_source": "2026年天猫抖音利润表童装.xlsx / 抖音!I90",
+              "drilldown": {
+                "module": "operating_profit",
+                "brand_id": "KIDS",
+                "month": 7,
+                "channel_id": "DOUYIN",
+                "store_id": "P4_87B7AE88AFAAC064"
+              }
+            }
+          ]
+        },
+        "new_stores": {
+          "name": "新店异常",
+          "rows": [],
+          "unavailable_actual_count": 2
+        },
+        "product": {
+          "name": "商品异常",
+          "rows": null,
+          "status": "待接入商品数据"
+        }
+      }
+    }
+  ],
+  "scope_notes": [
+    "所有异常均来自标准事实表或Phase 4—5标准输出，不直接读取Excel。",
+    "缺少实际值时不按0计算完成率，也不制造异常候选。",
+    "异常记录携带品牌、月份、渠道和门店筛选条件，用于直接下钻。",
+    "商品数据未完整提供，只显示待接入状态。"
+  ],
+  "generated_at": "2026-09-05T14:44:13+08:00"
+}

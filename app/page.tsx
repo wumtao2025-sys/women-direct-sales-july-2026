@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { AlertTriangle, ArrowDownRight, Banknote, Database, Landmark, LayoutDashboard, Store, TrendingUp } from 'lucide-react';
+import { AlertOctagon, AlertTriangle, ArrowDownRight, Banknote, Database, Landmark, LayoutDashboard, Store, TrendingUp } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -9,10 +9,13 @@ import salesData from './phase3-data.json';
 import phase4 from './phase4-data.json';
 import phase5 from './phase5-data.json';
 import phase6 from './phase6-data.json';
+import phase7 from './phase7-data.json';
 
 const currency = new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', maximumFractionDigits: 0 });
 const compactCurrency = new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', notation: 'compact', maximumFractionDigits: 2 });
 const percent = new Intl.NumberFormat('zh-CN', { style: 'percent', maximumFractionDigits: 1 });
+type ModuleId = 'home' | 'sales' | 'collection' | 'operating_profit' | 'new_stores' | 'exceptions';
+type DrillFocus = { categoryId: string; row: any } | null;
 
 function MetricCard({ label, value, note, tone = 'ink' }: { label: string; value: string; note: string; tone?: 'ink' | 'teal' | 'amber' }) {
   return <section className={`metric-card metric-${tone}`}><p>{label}</p><strong>{value}</strong><span>{note}</span></section>;
@@ -84,7 +87,7 @@ function NewStoreModule({ brandId, month, setMonth }: { brandId: string; month: 
   </>;
 }
 
-function Homepage({ brandId, setModule, setMonth }: { brandId: string; setModule: (value: 'sales' | 'collection' | 'operating_profit' | 'new_stores') => void; setMonth: (value: number) => void }) {
+function Homepage({ brandId, setModule, setMonth, openExceptions }: { brandId: string; setModule: (value: ModuleId) => void; setMonth: (value: number) => void; openExceptions: (categoryId: string) => void }) {
   const [trendMetric, setTrendMetric] = useState<'sales' | 'collection' | 'operating_profit'>('sales');
   const brand: any = phase6.brands.find((item: any) => item.id === brandId);
   const cards = brand.cards;
@@ -94,6 +97,7 @@ function Homepage({ brandId, setModule, setMonth }: { brandId: string; setModule
   const statusText: Record<string, string> = { GREEN: '进度正常', YELLOW: '黄色预警', RED: '红色预警', MISSING: '数据待补' };
   const statusStyle: Record<string, string> = { GREEN: 'status-good', YELLOW: 'status-risk', RED: 'status-danger', MISSING: 'status-muted' };
   const openModule = (module: 'sales' | 'collection' | 'operating_profit' | 'new_stores', month = 7) => { setMonth(month); setModule(module); };
+  const exceptionBrand: any = phase7.brands.find((item: any) => item.id === brandId);
   return <>
     <header className="dashboard-header"><div><div className="eyebrow"><span /> 总经理经营工作台 · V1</div><h1>经营首页</h1><p>{brand.name} · 2026年度经营总览</p></div><div className="source-pill"><Database size={16} /> 数据截至 <span>{phase6.actual_cutoff}</span></div></header>
     <section className="home-card-grid">
@@ -104,15 +108,33 @@ function Homepage({ brandId, setModule, setMonth }: { brandId: string; setModule
     </section>
     <section className="trend-panel home-trend"><div className="table-heading"><div><h2>1—12月目标与实际趋势</h2><p>{trendMetric === 'collection' ? cards.collection.trend_coverage : '点击月份进入对应经营模块；8—12月仅展示目标。'}</p></div><div className="segmented">{Object.entries(trendNames).map(([id,name]) => <button key={id} className={trendMetric === id ? 'active' : ''} onClick={() => setTrendMetric(id as any)}>{name}</button>)}</div></div><div className="trend-chart">{trends.map((point: any) => <button key={point.month} className="trend-month" onClick={() => openModule(trendMetric, point.month)}><span className="bar-pair"><i className="target-bar" style={{height:`${Math.max((point.target ?? 0)/maxTrend*120,2)}px`}}/><i className="actual-bar" style={{height:`${Math.max((point.actual ?? 0)/maxTrend*120,point.actual == null?0:2)}px`}}/></span><b>{point.month}月</b></button>)}</div><div className="home-trend-foot"><span><i className="bar-key target"/>目标</span><span><i className="bar-key actual"/>实际</span><b>{trendNames[trendMetric]} · 当前年度</b></div></section>
     <section className="table-panel"><div className="table-heading"><div><h2>渠道经营矩阵</h2><p>仅展示当前品牌实际存在的渠道；状态阈值来自系统配置。</p></div></div><div className="overflow-x-auto"><Table><TableHeader><TableRow><TableHead>渠道</TableHead><TableHead className="text-right">7月销售完成率</TableHead><TableHead className="text-right">年度回款完成率</TableHead><TableHead className="text-right">年度经营利润</TableHead><TableHead className="text-right">同比</TableHead><TableHead className="text-right">销售环比</TableHead><TableHead>状态</TableHead></TableRow></TableHeader><TableBody>{brand.channel_matrix.map((row:any) => <TableRow key={row.channel_id}><TableCell><div className="channel-name"><span>{row.name.slice(0,1)}</span><div><b>{row.name}</b><small>{row.status_reason}</small></div></div></TableCell><TableCell className="text-right">{row.sales_completion_rate == null ? '—' : percent.format(row.sales_completion_rate)}</TableCell><TableCell className="text-right">{row.collection_completion_rate == null ? '—' : percent.format(row.collection_completion_rate)}</TableCell><TableCell className="text-right">{row.operating_profit == null ? '—' : currency.format(row.operating_profit)}</TableCell><TableCell className="text-right muted-value">暂无</TableCell><TableCell className="text-right">{row.mom == null ? '—' : percent.format(row.mom)}</TableCell><TableCell><Badge variant="outline" className={statusStyle[row.status]}>{statusText[row.status]}</Badge></TableCell></TableRow>)}</TableBody></Table></div></section>
-    <section className="quality-note new-store-note"><AlertTriangle size={17}/><span>商品经营数据尚未接入；Top异常榜按任务书留到 Phase 7，不在首页制造模拟数据。</span></section>
+    <section className="table-panel"><div className="table-heading"><div><h2>重点经营异常</h2><p>按固定规则生成，点击进入异常中心。</p></div><button className="text-link" onClick={() => openExceptions('sales')}>查看全部</button></div><div className="exception-summary">{Object.entries(exceptionBrand.categories).map(([id,category]:any) => <button key={id} onClick={() => openExceptions(id)}><span>{category.name}</span><strong>{category.rows === null ? '待接入' : `${category.rows.length} 项`}</strong><small>{category.rows?.[0]?.name ?? (id === 'product' ? category.status : '当前无可计算异常')}</small></button>)}</div></section>
+    <section className="quality-note new-store-note"><AlertTriangle size={17}/><span>商品经营数据待接入；缺少实际值的门店不会按 0 计算完成率。</span></section>
+  </>;
+}
+
+function ExceptionCenter({ brandId, onDrill, initialCategory }: { brandId: string; onDrill: (categoryId: string, row: any) => void; initialCategory: string }) {
+  const [categoryId, setCategoryId] = useState(initialCategory);
+  const brand: any = phase7.brands.find((item: any) => item.id === brandId);
+  const category: any = brand.categories[categoryId];
+  const categoryNames: Record<string,string> = { sales:'销售异常', collection:'回款异常', operating_profit:'利润异常', new_stores:'新店异常', product:'商品异常' };
+  const extra = (row:any) => categoryId === 'sales' ? `落后 ${percent.format(row.lag_points)}` : categoryId === 'collection' ? `差额 ${currency.format(row.gap)}` : categoryId === 'operating_profit' ? row.loss_state : `阈值 ${percent.format(row.threshold)}`;
+  return <>
+    <header className="dashboard-header"><div><div className="eyebrow"><span /> 总经理经营工作台 · V1</div><h1>经营异常中心</h1><p>{brand.name} · 2026年7月 · 固定规则 Top 5</p></div><div className="source-pill"><Database size={16}/> 数据截至 <span>{phase7.actual_cutoff}</span></div></header>
+    <section className="exception-tabs">{Object.entries(categoryNames).map(([id,name]) => { const value:any=brand.categories[id]; return <button key={id} className={categoryId===id?'active':''} onClick={()=>setCategoryId(id)}><span>{name}</span><b>{value.rows===null?'待接入':value.rows.length}</b></button>})}</section>
+    <section className="table-panel exception-panel"><div className="table-heading"><div><h2>{category.name} Top 5</h2><p>{(phase7.rules as any)[categoryId] ?? category.status}</p></div></div>{category.rows === null ? <div className="empty-state"><AlertOctagon size={28}/><b>{category.status}</b><span>当前不展示模拟数字。</span></div> : category.rows.length === 0 ? <div className="empty-state"><AlertTriangle size={28}/><b>当前无可计算异常</b><span>{categoryId === 'new_stores' && category.unavailable_actual_count ? `${category.unavailable_actual_count} 家新店缺少实际销售，未按 0% 计入。` : '现有标准数据没有满足规则的记录。'}</span></div> : <div className="overflow-x-auto"><Table><TableHeader><TableRow><TableHead>对象</TableHead><TableHead>渠道</TableHead><TableHead className="text-right">目标</TableHead><TableHead className="text-right">实际</TableHead><TableHead className="text-right">完成率</TableHead><TableHead>补充信息</TableHead><TableHead>操作</TableHead></TableRow></TableHeader><TableBody>{category.rows.map((row:any)=><TableRow key={row.store_id ?? row.channel_id}><TableCell><b>{row.name}</b><div className="source-mini">{row.store_id ? '门店 / 经营单元' : '渠道'}</div></TableCell><TableCell>{row.channel_name ?? row.name}</TableCell><TableCell className="text-right">{row.target==null?'—':currency.format(row.target)}</TableCell><TableCell className={`text-right ${row.actual<0?'text-red-700':''}`}>{row.actual==null?'—':currency.format(row.actual)}</TableCell><TableCell className="text-right">{row.completion_rate==null?'—':percent.format(row.completion_rate)}</TableCell><TableCell><Badge variant="outline" className={row.actual<0?'status-danger':'status-risk'}>{extra(row)}</Badge></TableCell><TableCell><button className="drill-button" onClick={()=>onDrill(categoryId,row)}>定向下钻</button></TableCell></TableRow>)}</TableBody></Table></div>}</section>
   </>;
 }
 
 export default function Home() {
-  const [module, setModule] = useState<'home' | 'sales' | 'collection' | 'operating_profit' | 'new_stores'>('home');
+  const [module, setModule] = useState<ModuleId>('home');
   const [brandId, setBrandId] = useState('WOMEN');
   const [month, setMonth] = useState(7);
-  const modules = [{id:'home',name:'经营首页',icon:<LayoutDashboard size={15}/>},{id:'sales',name:'销售',icon:<Landmark size={15}/>},{id:'collection',name:'回款',icon:<Banknote size={15}/>},{id:'operating_profit',name:'经营利润',icon:<TrendingUp size={15}/>},{id:'new_stores',name:'新开店铺',icon:<Store size={15}/>}];
-  const content = module === 'home' ? <Homepage brandId={brandId} setModule={setModule} setMonth={setMonth}/> : module === 'sales' ? <SalesSummary brandId={brandId}/> : module === 'new_stores' ? <NewStoreModule brandId={brandId} month={month} setMonth={setMonth}/> : <FinanceModule metric={module} brandId={brandId} month={month} setMonth={setMonth}/>;
-  return <main className="min-h-screen bg-background text-foreground"><div className="mx-auto w-full max-w-[1480px] px-4 py-5 sm:px-7 lg:px-10"><nav className="workbench-nav"><div className="segmented">{modules.map((item: any) => <button key={item.id} className={module === item.id ? 'active' : ''} onClick={() => setModule(item.id)}>{item.icon}{item.name}</button>)}</div><div className="segmented">{phase4.collection.brands.map((item: any) => <button key={item.id} className={brandId === item.id ? 'active' : ''} onClick={() => setBrandId(item.id)}>{item.name}</button>)}</div></nav>{content}<footer><span>新店实际数量只认正式开业日期 · 合并渠道不强拆</span><span>数据截至 2026-07-31 · 来源可追溯到单元格</span></footer></div></main>;
+  const [focus, setFocus] = useState<DrillFocus>(null);
+  const [exceptionCategory, setExceptionCategory] = useState('sales');
+  const modules = [{id:'home',name:'经营首页',icon:<LayoutDashboard size={15}/>},{id:'exceptions',name:'异常中心',icon:<AlertOctagon size={15}/>},{id:'sales',name:'销售',icon:<Landmark size={15}/>},{id:'collection',name:'回款',icon:<Banknote size={15}/>},{id:'operating_profit',name:'经营利润',icon:<TrendingUp size={15}/>},{id:'new_stores',name:'新开店铺',icon:<Store size={15}/>}];
+  const onDrill = (categoryId:string,row:any) => { setFocus({categoryId,row}); setBrandId(row.drilldown.brand_id); setMonth(row.drilldown.month); setModule(row.drilldown.module); };
+  const openExceptions = (categoryId:string) => { setExceptionCategory(categoryId); setModule('exceptions'); };
+  const content = module === 'home' ? <Homepage brandId={brandId} setModule={setModule} setMonth={setMonth} openExceptions={openExceptions}/> : module === 'exceptions' ? <ExceptionCenter key={exceptionCategory} brandId={brandId} onDrill={onDrill} initialCategory={exceptionCategory}/> : module === 'sales' ? <SalesSummary brandId={brandId}/> : module === 'new_stores' ? <NewStoreModule brandId={brandId} month={month} setMonth={setMonth}/> : <FinanceModule metric={module} brandId={brandId} month={month} setMonth={setMonth}/>;
+  return <main className="min-h-screen bg-background text-foreground"><div className="mx-auto w-full max-w-[1480px] px-4 py-5 sm:px-7 lg:px-10"><nav className="workbench-nav"><div className="segmented">{modules.map((item: any) => <button key={item.id} className={module === item.id ? 'active' : ''} onClick={() => {setFocus(null);setModule(item.id)}}>{item.icon}{item.name}</button>)}</div><div className="segmented">{phase4.collection.brands.map((item: any) => <button key={item.id} className={brandId === item.id ? 'active' : ''} onClick={() => {setFocus(null);setBrandId(item.id)}}>{item.name}</button>)}</div></nav>{focus && module !== 'exceptions' && <section className="drill-context"><AlertOctagon size={18}/><div><b>已定向到：{focus.row.name}</b><span>{focus.row.channel_name ?? focus.row.name} · 2026年{focus.row.drilldown.month}月 · {focus.categoryId==='collection'?'渠道':'门店'}筛选已保留</span></div><button onClick={()=>setFocus(null)}>清除筛选</button></section>}{content}<footer><span>新店实际数量只认正式开业日期 · 合并渠道不强拆</span><span>数据截至 2026-07-31 · 来源可追溯到单元格</span></footer></div></main>;
 }
