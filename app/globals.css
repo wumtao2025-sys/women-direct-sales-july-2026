@@ -120,9 +120,24 @@ footer { display:flex; justify-content:space-between; gap:1rem; padding:1rem .15
 .source-mini { color:#8490a1; font-size:.7rem; }
 .loss-panel { border-color:#fecaca; }
 .new-store-note { margin-top:.85rem; }
+.home-card-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.85rem; }
+.home-kpi { display:block; min-height:220px; border:1px solid #dce4ec; border-top:3px solid #14b8a6; border-radius:1rem; background:rgb(255 255 255 / 94%); padding:1.15rem 1.2rem; text-align:left; box-shadow:0 8px 30px rgb(30 50 74 / 5%); cursor:pointer; transition:transform .16s ease,box-shadow .16s ease; }
+.home-kpi:hover { transform:translateY(-2px); box-shadow:0 14px 34px rgb(30 50 74 / 10%); }
+.home-kpi-title { display:flex; align-items:center; gap:.45rem; color:#526175; font-size:.82rem; font-weight:750; }
+.home-kpi strong { display:block; margin-top:.85rem; color:#17243b; font-size:clamp(1.6rem,2.3vw,2.1rem); letter-spacing:-.04em; }
+.home-kpi>p { margin-top:.35rem; color:#64748b; font-size:.8rem; }
+.home-rate { display:flex; justify-content:space-between; gap:.55rem; margin-top:.85rem; border-top:1px solid #e5ebf1; padding-top:.75rem; color:#334155; font-size:.76rem; font-weight:700; }
+.home-kpi small { display:block; margin-top:.6rem; color:#64748b; font-size:.72rem; }
+.home-kpi em { display:block; margin-top:.4rem; color:#8a96a7; font-size:.66rem; font-style:normal; line-height:1.45; }
+.home-trend .segmented button { padding:.4rem .75rem; }
+.home-trend-foot { display:flex; align-items:center; gap:.7rem; border-top:1px solid #edf1f5; padding:.7rem 1.25rem; color:#748196; font-size:.72rem; }
+.home-trend-foot span { display:flex; align-items:center; gap:.15rem; }
+.home-trend-foot .bar-key { margin-left:0; }
+.home-trend-foot b { margin-left:auto; color:#42526a; }
 
 @media (max-width:900px) {
   .metric-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .home-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .performance-band { flex-wrap:wrap; }
   .performance-band [data-slot='progress'] { order:3; flex-basis:100%; }
 }
@@ -133,4 +148,5 @@ footer { display:flex; justify-content:space-between; gap:1rem; padding:1rem .15
   .legend { display:none; } footer { flex-direction:column; }
   .filter-bar { flex-wrap:wrap; } .filter-note { width:100%; margin-left:0; } .trend-chart { grid-template-columns:repeat(12,48px); }
   .workbench-nav { align-items:stretch; flex-direction:column; } .workbench-nav .segmented { overflow-x:auto; }
+  .home-card-grid { grid-template-columns:1fr; }
 }

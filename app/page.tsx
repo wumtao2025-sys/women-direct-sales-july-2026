@@ -1,13 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import { AlertTriangle, ArrowDownRight, Banknote, Database, Landmark, Store, TrendingUp } from 'lucide-react';
+import { AlertTriangle, ArrowDownRight, Banknote, Database, Landmark, LayoutDashboard, Store, TrendingUp } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import salesData from './phase3-data.json';
 import phase4 from './phase4-data.json';
 import phase5 from './phase5-data.json';
+import phase6 from './phase6-data.json';
 
 const currency = new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', maximumFractionDigits: 0 });
 const compactCurrency = new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', notation: 'compact', maximumFractionDigits: 2 });
@@ -83,11 +84,35 @@ function NewStoreModule({ brandId, month, setMonth }: { brandId: string; month: 
   </>;
 }
 
+function Homepage({ brandId, setModule, setMonth }: { brandId: string; setModule: (value: 'sales' | 'collection' | 'operating_profit' | 'new_stores') => void; setMonth: (value: number) => void }) {
+  const [trendMetric, setTrendMetric] = useState<'sales' | 'collection' | 'operating_profit'>('sales');
+  const brand: any = phase6.brands.find((item: any) => item.id === brandId);
+  const cards = brand.cards;
+  const trends = brand.trends[trendMetric];
+  const maxTrend = Math.max(...trends.flatMap((point: any) => [point.target ?? 0, point.actual ?? 0]), 1);
+  const trendNames = { sales: '销售', collection: '回款', operating_profit: '经营利润' };
+  const statusText: Record<string, string> = { GREEN: '进度正常', YELLOW: '黄色预警', RED: '红色预警', MISSING: '数据待补' };
+  const statusStyle: Record<string, string> = { GREEN: 'status-good', YELLOW: 'status-risk', RED: 'status-danger', MISSING: 'status-muted' };
+  const openModule = (module: 'sales' | 'collection' | 'operating_profit' | 'new_stores', month = 7) => { setMonth(month); setModule(module); };
+  return <>
+    <header className="dashboard-header"><div><div className="eyebrow"><span /> 总经理经营工作台 · V1</div><h1>经营首页</h1><p>{brand.name} · 2026年度经营总览</p></div><div className="source-pill"><Database size={16} /> 数据截至 <span>{phase6.actual_cutoff}</span></div></header>
+    <section className="home-card-grid">
+      <button className="home-kpi" onClick={() => openModule('sales')}><div className="home-kpi-title"><Landmark size={17}/>销售</div><strong>{compactCurrency.format(cards.sales.actual)}</strong><p>年度目标 {compactCurrency.format(cards.sales.target)}</p><div className="home-rate"><span>完成率 {percent.format(cards.sales.completion_rate)}</span><span>时间进度 {percent.format(phase6.time_progress)}</span></div><small>目标差额 {currency.format(cards.sales.gap)} · 同比暂无</small><em>{cards.sales.coverage}</em></button>
+      <button className="home-kpi" onClick={() => openModule('collection')}><div className="home-kpi-title"><Banknote size={17}/>回款</div><strong>{compactCurrency.format(cards.collection.actual)}</strong><p>年度目标 {compactCurrency.format(cards.collection.target)}</p><div className="home-rate"><span>完成率 {percent.format(cards.collection.completion_rate)}</span><span>时间进度 {percent.format(phase6.time_progress)}</span></div><small>目标差额 {currency.format(cards.collection.gap)}</small><em>年度卡片采用财务汇总口径</em></button>
+      <button className="home-kpi" onClick={() => openModule('operating_profit')}><div className="home-kpi-title"><TrendingUp size={17}/>经营利润</div><strong>{compactCurrency.format(cards.operating_profit.actual)}</strong><p>年度目标 {compactCurrency.format(cards.operating_profit.target)}</p><div className="home-rate"><span>完成率 {percent.format(cards.operating_profit.completion_rate)}</span><span>利润率 暂不计算</span></div><small>同比、环比暂无同口径依据</small><em>{cards.operating_profit.margin_note}</em></button>
+      <button className="home-kpi" onClick={() => openModule('new_stores')}><div className="home-kpi-title"><Store size={17}/>新店</div><strong>{cards.new_stores.annual_planned_count} 家</strong><p>截至7月计划累计 {cards.new_stores.planned_cumulative} 家</p><div className="home-rate"><span>实际累计 待确认</span><span>差额 —</span></div><small>完成情况待正式开业日期</small><em>不以经营数据倒推开店数量</em></button>
+    </section>
+    <section className="trend-panel home-trend"><div className="table-heading"><div><h2>1—12月目标与实际趋势</h2><p>{trendMetric === 'collection' ? cards.collection.trend_coverage : '点击月份进入对应经营模块；8—12月仅展示目标。'}</p></div><div className="segmented">{Object.entries(trendNames).map(([id,name]) => <button key={id} className={trendMetric === id ? 'active' : ''} onClick={() => setTrendMetric(id as any)}>{name}</button>)}</div></div><div className="trend-chart">{trends.map((point: any) => <button key={point.month} className="trend-month" onClick={() => openModule(trendMetric, point.month)}><span className="bar-pair"><i className="target-bar" style={{height:`${Math.max((point.target ?? 0)/maxTrend*120,2)}px`}}/><i className="actual-bar" style={{height:`${Math.max((point.actual ?? 0)/maxTrend*120,point.actual == null?0:2)}px`}}/></span><b>{point.month}月</b></button>)}</div><div className="home-trend-foot"><span><i className="bar-key target"/>目标</span><span><i className="bar-key actual"/>实际</span><b>{trendNames[trendMetric]} · 当前年度</b></div></section>
+    <section className="table-panel"><div className="table-heading"><div><h2>渠道经营矩阵</h2><p>仅展示当前品牌实际存在的渠道；状态阈值来自系统配置。</p></div></div><div className="overflow-x-auto"><Table><TableHeader><TableRow><TableHead>渠道</TableHead><TableHead className="text-right">7月销售完成率</TableHead><TableHead className="text-right">年度回款完成率</TableHead><TableHead className="text-right">年度经营利润</TableHead><TableHead className="text-right">同比</TableHead><TableHead className="text-right">销售环比</TableHead><TableHead>状态</TableHead></TableRow></TableHeader><TableBody>{brand.channel_matrix.map((row:any) => <TableRow key={row.channel_id}><TableCell><div className="channel-name"><span>{row.name.slice(0,1)}</span><div><b>{row.name}</b><small>{row.status_reason}</small></div></div></TableCell><TableCell className="text-right">{row.sales_completion_rate == null ? '—' : percent.format(row.sales_completion_rate)}</TableCell><TableCell className="text-right">{row.collection_completion_rate == null ? '—' : percent.format(row.collection_completion_rate)}</TableCell><TableCell className="text-right">{row.operating_profit == null ? '—' : currency.format(row.operating_profit)}</TableCell><TableCell className="text-right muted-value">暂无</TableCell><TableCell className="text-right">{row.mom == null ? '—' : percent.format(row.mom)}</TableCell><TableCell><Badge variant="outline" className={statusStyle[row.status]}>{statusText[row.status]}</Badge></TableCell></TableRow>)}</TableBody></Table></div></section>
+    <section className="quality-note new-store-note"><AlertTriangle size={17}/><span>商品经营数据尚未接入；Top异常榜按任务书留到 Phase 7，不在首页制造模拟数据。</span></section>
+  </>;
+}
+
 export default function Home() {
-  const [module, setModule] = useState<'sales' | 'collection' | 'operating_profit' | 'new_stores'>('new_stores');
+  const [module, setModule] = useState<'home' | 'sales' | 'collection' | 'operating_profit' | 'new_stores'>('home');
   const [brandId, setBrandId] = useState('WOMEN');
   const [month, setMonth] = useState(7);
-  const modules = [{id:'sales',name:'销售',icon:<Landmark size={15}/>},{id:'collection',name:'回款',icon:<Banknote size={15}/>},{id:'operating_profit',name:'经营利润',icon:<TrendingUp size={15}/>},{id:'new_stores',name:'新开店铺',icon:<Store size={15}/>}];
-  const content = module === 'sales' ? <SalesSummary brandId={brandId}/> : module === 'new_stores' ? <NewStoreModule brandId={brandId} month={month} setMonth={setMonth}/> : <FinanceModule metric={module} brandId={brandId} month={month} setMonth={setMonth}/>;
+  const modules = [{id:'home',name:'经营首页',icon:<LayoutDashboard size={15}/>},{id:'sales',name:'销售',icon:<Landmark size={15}/>},{id:'collection',name:'回款',icon:<Banknote size={15}/>},{id:'operating_profit',name:'经营利润',icon:<TrendingUp size={15}/>},{id:'new_stores',name:'新开店铺',icon:<Store size={15}/>}];
+  const content = module === 'home' ? <Homepage brandId={brandId} setModule={setModule} setMonth={setMonth}/> : module === 'sales' ? <SalesSummary brandId={brandId}/> : module === 'new_stores' ? <NewStoreModule brandId={brandId} month={month} setMonth={setMonth}/> : <FinanceModule metric={module} brandId={brandId} month={month} setMonth={setMonth}/>;
   return <main className="min-h-screen bg-background text-foreground"><div className="mx-auto w-full max-w-[1480px] px-4 py-5 sm:px-7 lg:px-10"><nav className="workbench-nav"><div className="segmented">{modules.map((item: any) => <button key={item.id} className={module === item.id ? 'active' : ''} onClick={() => setModule(item.id)}>{item.icon}{item.name}</button>)}</div><div className="segmented">{phase4.collection.brands.map((item: any) => <button key={item.id} className={brandId === item.id ? 'active' : ''} onClick={() => setBrandId(item.id)}>{item.name}</button>)}</div></nav>{content}<footer><span>新店实际数量只认正式开业日期 · 合并渠道不强拆</span><span>数据截至 2026-07-31 · 来源可追溯到单元格</span></footer></div></main>;
 }

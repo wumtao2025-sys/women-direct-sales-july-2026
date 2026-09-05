@@ -1,0 +1,2097 @@
+{
+  "phase": "Phase 6",
+  "title": "总经理经营首页",
+  "year": 2026,
+  "actual_cutoff": "2026-07-31",
+  "time_progress": 0.583,
+  "warning_thresholds": {
+    "yellow_lag": 0.1,
+    "red_lag": 0.2
+  },
+  "brands": [
+    {
+      "id": "WOMEN",
+      "name": "女装",
+      "cards": {
+        "sales": {
+          "target": 93333457.25550906,
+          "actual": 52581878.24,
+          "completion_rate": 0.5633765188409575,
+          "gap": 40751579.01550906,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径销售实际",
+          "coverage": "6/7个现有销售渠道具备完整目标与实际口径",
+          "trend": [
+            {
+              "month": 1,
+              "target": 10178596.0,
+              "actual": 10587094.959999999,
+              "completion_rate": 1.0401331342751003
+            },
+            {
+              "month": 2,
+              "target": 7611853.088638724,
+              "actual": 8702268.84,
+              "completion_rate": 1.1432523379870279
+            },
+            {
+              "month": 3,
+              "target": 6550930.142433658,
+              "actual": 6829838.49,
+              "completion_rate": 1.0425753811294236
+            },
+            {
+              "month": 4,
+              "target": 6750471.257732883,
+              "actual": 7463553.88,
+              "completion_rate": 1.1056344949917767
+            },
+            {
+              "month": 5,
+              "target": 7639563.726985849,
+              "actual": 7410886.01,
+              "completion_rate": 0.9700666523432389
+            },
+            {
+              "month": 6,
+              "target": 6708701.29958187,
+              "actual": 5596103.28,
+              "completion_rate": 0.8341559759634529
+            },
+            {
+              "month": 7,
+              "target": 6256654.755936083,
+              "actual": 5992132.78,
+              "completion_rate": 0.9577215003456736
+            },
+            {
+              "month": 8,
+              "target": 6537306.192941805,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 9,
+              "target": 7046365.303087816,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 10,
+              "target": 9276773.89701439,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 11,
+              "target": 9199736.0126285,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 12,
+              "target": 9576505.57852748,
+              "actual": null,
+              "completion_rate": null
+            }
+          ]
+        },
+        "collection": {
+          "target": 116008737.96,
+          "actual": 61904171.87,
+          "completion_rate": 0.5336164581959737,
+          "gap": 54104566.089999996,
+          "forecast": 106182112.9845626,
+          "forecast_gap": 9826624.975437388,
+          "trend": [
+            {
+              "month": 1,
+              "target": 1201790.6622081567,
+              "actual": 743175.88,
+              "completion_rate": 0.6183904596450241
+            },
+            {
+              "month": 2,
+              "target": 570978.5214205938,
+              "actual": 802742.67,
+              "completion_rate": 1.4059069472574508
+            },
+            {
+              "month": 3,
+              "target": 853770.4710706946,
+              "actual": 865356.7,
+              "completion_rate": 1.0135706601737764
+            },
+            {
+              "month": 4,
+              "target": 828108.6482253347,
+              "actual": 880375.52,
+              "completion_rate": 1.0631159593450388
+            },
+            {
+              "month": 5,
+              "target": 866136.982839919,
+              "actual": 898566.53,
+              "completion_rate": 1.0374415915756765
+            },
+            {
+              "month": 6,
+              "target": 980851.3844419507,
+              "actual": 700629.7000000001,
+              "completion_rate": 0.7143077036065142
+            },
+            {
+              "month": 7,
+              "target": 532234.7365774297,
+              "actual": 597822.61,
+              "completion_rate": 1.1232311025851816
+            },
+            {
+              "month": 8,
+              "target": 640751.8548828244,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 9,
+              "target": 786618.058999853,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 10,
+              "target": 1144245.6197636747,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 11,
+              "target": 1318076.8746594165,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 12,
+              "target": 1143117.7315858428,
+              "actual": null,
+              "completion_rate": null
+            }
+          ],
+          "trend_coverage": "年度及截至7月累计覆盖全部已确认汇总渠道；月度仅展示有明确财务回款行的线上经营单元。",
+          "channels": [
+            {
+              "channel_id": "DIRECT",
+              "name": "直营+奥莱",
+              "scope_type": "CHANNEL",
+              "target": 23709000.0,
+              "actual": 11871071.33,
+              "completion_rate": 0.5006989468134464,
+              "gap": 11837928.67,
+              "forecast": 20362043.447684392,
+              "forecast_gap": 3346956.5523156077,
+              "target_source": {
+                "label": "直营+奥莱",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F4",
+                "value": 23709000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "直营+奥莱",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P4",
+                "value": 11871071.33,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "JOINT",
+              "name": "联营",
+              "scope_type": "CHANNEL",
+              "target": 21547000.0,
+              "actual": 15168460.32,
+              "completion_rate": 0.7039708692625424,
+              "gap": 6378539.68,
+              "forecast": 26017942.22984563,
+              "forecast_gap": -4470942.229845628,
+              "target_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F5",
+                "value": 21547000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P5",
+                "value": 15168460.32,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "FRANCHISE",
+              "name": "加盟",
+              "scope_type": "CHANNEL",
+              "target": 47462000.0,
+              "actual": 23928664.83,
+              "completion_rate": 0.5041646965993848,
+              "gap": 23533335.17,
+              "forecast": 41044022.00686106,
+              "forecast_gap": 6417977.993138939,
+              "target_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F6",
+                "value": 47462000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P6",
+                "value": 23928664.83,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "TMALL",
+              "name": "天猫",
+              "scope_type": "CHANNEL",
+              "target": 10159737.96,
+              "actual": 5278491.13,
+              "completion_rate": 0.5195499284314218,
+              "gap": 4881246.830000001,
+              "forecast": 9054015.660377359,
+              "forecast_gap": 1105722.2996226419,
+              "target_source": {
+                "label": "天猫",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F7",
+                "value": 10159737.96,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "天猫",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P7",
+                "value": 5278491.13,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "WECHAT_PRIVATE",
+              "name": "私域",
+              "scope_type": "CHANNEL",
+              "target": 707000.0,
+              "actual": 554290.07,
+              "completion_rate": 0.7840029278642149,
+              "gap": 152709.93000000005,
+              "forecast": 950754.8370497427,
+              "forecast_gap": -243754.8370497427,
+              "target_source": {
+                "label": "私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F8",
+                "value": 707000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P8",
+                "value": 554290.07,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": null,
+              "name": "新增",
+              "scope_type": "COMBINED",
+              "target": 5159000.0,
+              "actual": 890201.68,
+              "completion_rate": 0.17255314595851912,
+              "gap": 4268798.32,
+              "forecast": 1526932.555746141,
+              "forecast_gap": 3632067.444253859,
+              "target_source": {
+                "label": "新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F9",
+                "value": 5159000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P9",
+                "value": 890201.68,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "SHOWROOM",
+              "name": "展厅",
+              "scope_type": "CHANNEL",
+              "target": 2600000.0,
+              "actual": 1340416.47,
+              "completion_rate": 0.5155447961538462,
+              "gap": 1259583.53,
+              "forecast": 2299170.617495712,
+              "forecast_gap": 300829.3825042881,
+              "target_source": {
+                "label": "展厅",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F10",
+                "value": 2600000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "展厅",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P10",
+                "value": 1340416.47,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "SPECIAL_SALE",
+              "name": "特卖",
+              "scope_type": "CHANNEL",
+              "target": 4665000.0,
+              "actual": 2872576.04,
+              "completion_rate": 0.6157719271168275,
+              "gap": 1792423.96,
+              "forecast": 4927231.629502573,
+              "forecast_gap": -262231.62950257305,
+              "target_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F11",
+                "value": 4665000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P11",
+                "value": 2872576.04,
+                "source_file_id": 1
+              }
+            }
+          ]
+        },
+        "operating_profit": {
+          "target": 41405000.0,
+          "actual": 20673921.43,
+          "completion_rate": 0.4993097797367468,
+          "gap": 20731078.57,
+          "forecast": 35461271.74957118,
+          "forecast_gap": 5943728.250428818,
+          "trend": [
+            {
+              "month": 1,
+              "target": 2515165.83781339,
+              "actual": 2585773.5470000003,
+              "completion_rate": 1.0280727847544218
+            },
+            {
+              "month": 2,
+              "target": 1572893.2755057586,
+              "actual": 2103380.992,
+              "completion_rate": 1.337268729388944
+            },
+            {
+              "month": 3,
+              "target": 1204089.22354342,
+              "actual": 1423606.184,
+              "completion_rate": 1.1823095466385627
+            },
+            {
+              "month": 4,
+              "target": 1363018.393941515,
+              "actual": 1590270.084,
+              "completion_rate": 1.1667267962549859
+            },
+            {
+              "month": 5,
+              "target": 1625668.2774007474,
+              "actual": 1591754.745628,
+              "completion_rate": 0.9791387134483727
+            },
+            {
+              "month": 6,
+              "target": 1397556.0516625417,
+              "actual": 835428.088,
+              "completion_rate": 0.5977778758899648
+            },
+            {
+              "month": 7,
+              "target": 1127951.0080856597,
+              "actual": 1104283.1700000002,
+              "completion_rate": 0.9790169626907571
+            },
+            {
+              "month": 8,
+              "target": 1265490.8058519403,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 9,
+              "target": 1449616.3595991244,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 10,
+              "target": 2135729.1664726962,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 11,
+              "target": 2165787.2330058655,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 12,
+              "target": 2152652.866905376,
+              "actual": null,
+              "completion_rate": null
+            }
+          ],
+          "trend_coverage": "利润统一为经营利润；同比因缺少可比2025事实暂不计算。",
+          "channels": [
+            {
+              "channel_id": "DIRECT",
+              "name": "直营+奥莱",
+              "scope_type": "CHANNEL",
+              "target": 4105000.0,
+              "actual": 2332780.0,
+              "completion_rate": 0.5682777101096224,
+              "gap": 1772220.0,
+              "forecast": 4001337.9073756435,
+              "forecast_gap": 103662.0926243565,
+              "target_source": {
+                "label": "直营+奥莱",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B4",
+                "value": 4105000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "直营+奥莱",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L4",
+                "value": 2332780.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "JOINT",
+              "name": "联营",
+              "scope_type": "CHANNEL",
+              "target": 8502000.0,
+              "actual": 5421064.0,
+              "completion_rate": 0.6376222065396377,
+              "gap": 3080936.0,
+              "forecast": 9298566.03773585,
+              "forecast_gap": -796566.0377358496,
+              "target_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B5",
+                "value": 8502000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L5",
+                "value": 5421064.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "FRANCHISE",
+              "name": "加盟",
+              "scope_type": "CHANNEL",
+              "target": 18258000.0,
+              "actual": 7970641.0,
+              "completion_rate": 0.4365560850038339,
+              "gap": 10287359.0,
+              "forecast": 13671768.439108063,
+              "forecast_gap": 4586231.560891937,
+              "target_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B6",
+                "value": 18258000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L6",
+                "value": 7970641.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "TMALL",
+              "name": "天猫",
+              "scope_type": "CHANNEL",
+              "target": 5800000.0,
+              "actual": 2632624.0,
+              "completion_rate": 0.45390068965517244,
+              "gap": 3167376.0,
+              "forecast": 4515650.085763293,
+              "forecast_gap": 1284349.9142367067,
+              "target_source": {
+                "label": "天猫",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B7",
+                "value": 5800000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "天猫",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L7",
+                "value": 2632624.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "WECHAT_PRIVATE",
+              "name": "私域",
+              "scope_type": "CHANNEL",
+              "target": 51000.0,
+              "actual": 127507.0,
+              "completion_rate": 2.500137254901961,
+              "gap": -76507.0,
+              "forecast": 218708.40480274445,
+              "forecast_gap": -167708.40480274445,
+              "target_source": {
+                "label": "私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B8",
+                "value": 51000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L8",
+                "value": 127507.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": null,
+              "name": "新增",
+              "scope_type": "COMBINED",
+              "target": 1701000.0,
+              "actual": 471033.43,
+              "completion_rate": 0.2769155967078189,
+              "gap": 1229966.57,
+              "forecast": 807947.56432247,
+              "forecast_gap": 893052.43567753,
+              "target_source": {
+                "label": "新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B9",
+                "value": 1701000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L9",
+                "value": 471033.43,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "SHOWROOM",
+              "name": "展厅",
+              "scope_type": "CHANNEL",
+              "target": 880000.0,
+              "actual": 303251.0,
+              "completion_rate": 0.3446034090909091,
+              "gap": 576749.0,
+              "forecast": 520156.0891938251,
+              "forecast_gap": 359843.9108061749,
+              "target_source": {
+                "label": "展厅",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B10",
+                "value": 880000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "展厅",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L10",
+                "value": 303251.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "SPECIAL_SALE",
+              "name": "特卖",
+              "scope_type": "CHANNEL",
+              "target": 2108000.0,
+              "actual": 1415021.0,
+              "completion_rate": 0.6712623339658444,
+              "gap": 692979.0,
+              "forecast": 2427137.221269297,
+              "forecast_gap": -319137.22126929695,
+              "target_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B11",
+                "value": 2108000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L11",
+                "value": 1415021.0,
+                "source_file_id": 1
+              }
+            }
+          ],
+          "margin": null,
+          "margin_note": "销售与利润年度汇总覆盖口径不一致，暂不计算经营利润率",
+          "yoy": null,
+          "mom": null,
+          "comparison_note": "缺少2025同口径利润及完整月度汇总"
+        },
+        "new_stores": {
+          "annual_planned_count": 2,
+          "planned_cumulative": 2,
+          "actual_opened_count": null,
+          "gap": null,
+          "completion_rate": null,
+          "status_note": "实际开店数只认正式开业日期；当前来源缺失，因此不计算实际数量和完成率。"
+        }
+      },
+      "trends": {
+        "sales": [
+          {
+            "month": 1,
+            "target": 10178596.0,
+            "actual": 10587094.959999999,
+            "completion_rate": 1.0401331342751003
+          },
+          {
+            "month": 2,
+            "target": 7611853.088638724,
+            "actual": 8702268.84,
+            "completion_rate": 1.1432523379870279
+          },
+          {
+            "month": 3,
+            "target": 6550930.142433658,
+            "actual": 6829838.49,
+            "completion_rate": 1.0425753811294236
+          },
+          {
+            "month": 4,
+            "target": 6750471.257732883,
+            "actual": 7463553.88,
+            "completion_rate": 1.1056344949917767
+          },
+          {
+            "month": 5,
+            "target": 7639563.726985849,
+            "actual": 7410886.01,
+            "completion_rate": 0.9700666523432389
+          },
+          {
+            "month": 6,
+            "target": 6708701.29958187,
+            "actual": 5596103.28,
+            "completion_rate": 0.8341559759634529
+          },
+          {
+            "month": 7,
+            "target": 6256654.755936083,
+            "actual": 5992132.78,
+            "completion_rate": 0.9577215003456736
+          },
+          {
+            "month": 8,
+            "target": 6537306.192941805,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 9,
+            "target": 7046365.303087816,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 10,
+            "target": 9276773.89701439,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 11,
+            "target": 9199736.0126285,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 12,
+            "target": 9576505.57852748,
+            "actual": null,
+            "completion_rate": null
+          }
+        ],
+        "collection": [
+          {
+            "month": 1,
+            "target": 1201790.6622081567,
+            "actual": 743175.88,
+            "completion_rate": 0.6183904596450241
+          },
+          {
+            "month": 2,
+            "target": 570978.5214205938,
+            "actual": 802742.67,
+            "completion_rate": 1.4059069472574508
+          },
+          {
+            "month": 3,
+            "target": 853770.4710706946,
+            "actual": 865356.7,
+            "completion_rate": 1.0135706601737764
+          },
+          {
+            "month": 4,
+            "target": 828108.6482253347,
+            "actual": 880375.52,
+            "completion_rate": 1.0631159593450388
+          },
+          {
+            "month": 5,
+            "target": 866136.982839919,
+            "actual": 898566.53,
+            "completion_rate": 1.0374415915756765
+          },
+          {
+            "month": 6,
+            "target": 980851.3844419507,
+            "actual": 700629.7000000001,
+            "completion_rate": 0.7143077036065142
+          },
+          {
+            "month": 7,
+            "target": 532234.7365774297,
+            "actual": 597822.61,
+            "completion_rate": 1.1232311025851816
+          },
+          {
+            "month": 8,
+            "target": 640751.8548828244,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 9,
+            "target": 786618.058999853,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 10,
+            "target": 1144245.6197636747,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 11,
+            "target": 1318076.8746594165,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 12,
+            "target": 1143117.7315858428,
+            "actual": null,
+            "completion_rate": null
+          }
+        ],
+        "operating_profit": [
+          {
+            "month": 1,
+            "target": 2515165.83781339,
+            "actual": 2585773.5470000003,
+            "completion_rate": 1.0280727847544218
+          },
+          {
+            "month": 2,
+            "target": 1572893.2755057586,
+            "actual": 2103380.992,
+            "completion_rate": 1.337268729388944
+          },
+          {
+            "month": 3,
+            "target": 1204089.22354342,
+            "actual": 1423606.184,
+            "completion_rate": 1.1823095466385627
+          },
+          {
+            "month": 4,
+            "target": 1363018.393941515,
+            "actual": 1590270.084,
+            "completion_rate": 1.1667267962549859
+          },
+          {
+            "month": 5,
+            "target": 1625668.2774007474,
+            "actual": 1591754.745628,
+            "completion_rate": 0.9791387134483727
+          },
+          {
+            "month": 6,
+            "target": 1397556.0516625417,
+            "actual": 835428.088,
+            "completion_rate": 0.5977778758899648
+          },
+          {
+            "month": 7,
+            "target": 1127951.0080856597,
+            "actual": 1104283.1700000002,
+            "completion_rate": 0.9790169626907571
+          },
+          {
+            "month": 8,
+            "target": 1265490.8058519403,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 9,
+            "target": 1449616.3595991244,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 10,
+            "target": 2135729.1664726962,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 11,
+            "target": 2165787.2330058655,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 12,
+            "target": 2152652.866905376,
+            "actual": null,
+            "completion_rate": null
+          }
+        ]
+      },
+      "channel_matrix": [
+        {
+          "channel_id": "DIRECT",
+          "name": "直营",
+          "sales_completion_rate": 0.9252993333333334,
+          "collection_completion_rate": 0.5006989468134464,
+          "operating_profit": 2332780.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.004386931835299812,
+          "mom_metric": "销售实际",
+          "status": "GREEN",
+          "status_reason": "已具备的数据未触发预警",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "JOINT",
+          "name": "联营",
+          "sales_completion_rate": 0.9554137933333333,
+          "collection_completion_rate": 0.7039708692625424,
+          "operating_profit": 5421064.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": 0.20793689476779909,
+          "mom_metric": "销售实际",
+          "status": "GREEN",
+          "status_reason": "已具备的数据未触发预警",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "FRANCHISE",
+          "name": "加盟",
+          "sales_completion_rate": null,
+          "collection_completion_rate": 0.5041646965993848,
+          "operating_profit": 7970641.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": null,
+          "mom_metric": "销售实际",
+          "status": "YELLOW",
+          "status_reason": "至少一项完成率落后时间进度",
+          "sales_data_state": "TARGET_ONLY"
+        },
+        {
+          "channel_id": "TMALL",
+          "name": "天猫",
+          "sales_completion_rate": 1.0667466831985724,
+          "collection_completion_rate": 0.5195499284314218,
+          "operating_profit": 2632624.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.19350861645018969,
+          "mom_metric": "销售实际",
+          "status": "YELLOW",
+          "status_reason": "至少一项完成率落后时间进度",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "WECHAT_PRIVATE",
+          "name": "微信私域",
+          "sales_completion_rate": 1.3031123062898815,
+          "collection_completion_rate": 0.7840029278642149,
+          "operating_profit": 127507.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.014785581704236495,
+          "mom_metric": "销售实际",
+          "status": "GREEN",
+          "status_reason": "已具备的数据未触发预警",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "SPECIAL_SALE",
+          "name": "特卖",
+          "sales_completion_rate": 1.1059714375,
+          "collection_completion_rate": 0.6157719271168275,
+          "operating_profit": 1415021.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": 0.14575009040432185,
+          "mom_metric": "销售实际",
+          "status": "GREEN",
+          "status_reason": "已具备的数据未触发预警",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "SHOWROOM",
+          "name": "展厅",
+          "sales_completion_rate": 0.8531886956521739,
+          "collection_completion_rate": 0.5155447961538462,
+          "operating_profit": 303251.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": 0.21077168930050028,
+          "mom_metric": "销售实际",
+          "status": "RED",
+          "status_reason": "至少一项完成率明显落后时间进度",
+          "sales_data_state": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "id": "KIDS",
+      "name": "童装",
+      "cards": {
+        "sales": {
+          "target": 43794733.01668793,
+          "actual": 19826590.24,
+          "completion_rate": 0.45271631710701604,
+          "gap": 23968142.77668793,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径销售实际",
+          "coverage": "5/6个现有销售渠道具备完整目标与实际口径",
+          "trend": [
+            {
+              "month": 1,
+              "target": 4585998.94792342,
+              "actual": 4463899.91,
+              "completion_rate": 0.9733756943013021
+            },
+            {
+              "month": 2,
+              "target": 4838489.913857125,
+              "actual": 4444968.43,
+              "completion_rate": 0.9186685327729825
+            },
+            {
+              "month": 3,
+              "target": 3031633.782586558,
+              "actual": 1719452.19,
+              "completion_rate": 0.5671701509187503
+            },
+            {
+              "month": 4,
+              "target": 3845922.279121036,
+              "actual": 2975385.35,
+              "completion_rate": 0.7736467702826297
+            },
+            {
+              "month": 5,
+              "target": 3818063.167216993,
+              "actual": 2793435.35,
+              "completion_rate": 0.7316367560351681
+            },
+            {
+              "month": 6,
+              "target": 3225752.52226425,
+              "actual": 1904410.96,
+              "completion_rate": 0.5903772675850651
+            },
+            {
+              "month": 7,
+              "target": 2524189.050461881,
+              "actual": 1525038.05,
+              "completion_rate": 0.6041695053391289
+            },
+            {
+              "month": 8,
+              "target": 2840465.310628916,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 9,
+              "target": 2754226.161886271,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 10,
+              "target": 3959781.722936124,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 11,
+              "target": 3957780.470305353,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 12,
+              "target": 4412429.6875,
+              "actual": null,
+              "completion_rate": null
+            }
+          ]
+        },
+        "collection": {
+          "target": 33354948.56,
+          "actual": 15708318.08,
+          "completion_rate": 0.47094415545997176,
+          "gap": 17646630.479999997,
+          "forecast": 26943941.81818182,
+          "forecast_gap": 6411006.741818178,
+          "trend": [
+            {
+              "month": 1,
+              "target": 1162550.355693087,
+              "actual": 910275.14,
+              "completion_rate": 0.7829984615654038
+            },
+            {
+              "month": 2,
+              "target": 975262.7884350172,
+              "actual": 733465.48,
+              "completion_rate": 0.7520695844214214
+            },
+            {
+              "month": 3,
+              "target": 678574.441049755,
+              "actual": 474645.15,
+              "completion_rate": 0.6994739578840072
+            },
+            {
+              "month": 4,
+              "target": 993088.601232662,
+              "actual": 454435.47,
+              "completion_rate": 0.4575981130343619
+            },
+            {
+              "month": 5,
+              "target": 719119.680591964,
+              "actual": 399270.13,
+              "completion_rate": 0.5552206966041164
+            },
+            {
+              "month": 6,
+              "target": 883954.047794073,
+              "actual": 348094.69,
+              "completion_rate": 0.39379274394260433
+            },
+            {
+              "month": 7,
+              "target": 645293.796052665,
+              "actual": 237399.56,
+              "completion_rate": 0.3678937585518409
+            },
+            {
+              "month": 8,
+              "target": 517848.908155102,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 9,
+              "target": 541477.4242138721,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 10,
+              "target": 761576.286714239,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 11,
+              "target": 1038583.180061372,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 12,
+              "target": 1135490.91014046,
+              "actual": null,
+              "completion_rate": null
+            }
+          ],
+          "trend_coverage": "年度及截至7月累计覆盖全部已确认汇总渠道；月度仅展示有明确财务回款行的线上经营单元。",
+          "channels": [
+            {
+              "channel_id": null,
+              "name": "直营/私域",
+              "scope_type": "COMBINED",
+              "target": 16281145.53,
+              "actual": 8763363.99,
+              "completion_rate": 0.5382522976563554,
+              "gap": 7517781.539999999,
+              "forecast": 15031499.12521441,
+              "forecast_gap": 1249646.4047855902,
+              "target_source": {
+                "label": "直营/私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F22",
+                "value": 16281145.53,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "直营/私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P22",
+                "value": 8763363.99,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "JOINT",
+              "name": "联营",
+              "scope_type": "CHANNEL",
+              "target": 8191174.03,
+              "actual": 4456987.39,
+              "completion_rate": 0.5441207052464492,
+              "gap": 3734186.6400000006,
+              "forecast": 7644918.33619211,
+              "forecast_gap": 546255.6938078906,
+              "target_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F23",
+                "value": 8191174.03,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P23",
+                "value": 4456987.39,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "FRANCHISE",
+              "name": "加盟",
+              "scope_type": "CHANNEL",
+              "target": 137354.0,
+              "actual": 82149.55,
+              "completion_rate": 0.5980863316685353,
+              "gap": 55204.45,
+              "forecast": 140908.31903945113,
+              "forecast_gap": -3554.319039451133,
+              "target_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F24",
+                "value": 137354.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P24",
+                "value": 82149.55,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": null,
+              "name": "线上/天猫抖音",
+              "scope_type": "COMBINED",
+              "target": 5734375.0,
+              "actual": 2405817.15,
+              "completion_rate": 0.4195430452316076,
+              "gap": 3328557.85,
+              "forecast": 4126616.037735849,
+              "forecast_gap": 1607758.9622641508,
+              "target_source": {
+                "label": "线上/天猫抖音",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F25",
+                "value": 5734375.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "线上/天猫抖音",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P25",
+                "value": 2405817.15,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "COLLECTION_STORE",
+              "name": "集合",
+              "scope_type": "CHANNEL",
+              "target": 0.0,
+              "actual": 0.0,
+              "completion_rate": null,
+              "gap": 0.0,
+              "forecast": 0.0,
+              "forecast_gap": 0.0,
+              "target_source": {
+                "label": "集合",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F26",
+                "value": 0.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "集合",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P26",
+                "value": 0.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "SPECIAL_SALE",
+              "name": "特卖",
+              "scope_type": "CHANNEL",
+              "target": 662900.0,
+              "actual": 0.0,
+              "completion_rate": 0.0,
+              "gap": 662900.0,
+              "forecast": 0.0,
+              "forecast_gap": 662900.0,
+              "target_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F27",
+                "value": 662900.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P27",
+                "value": 0.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": null,
+              "name": "直营新增",
+              "scope_type": "COMBINED",
+              "target": 2348000.0,
+              "actual": 0.0,
+              "completion_rate": 0.0,
+              "gap": 2348000.0,
+              "forecast": 0.0,
+              "forecast_gap": 2348000.0,
+              "target_source": {
+                "label": "直营新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "F28",
+                "value": 2348000.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "直营新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "P28",
+                "value": 0.0,
+                "source_file_id": 1
+              }
+            }
+          ]
+        },
+        "operating_profit": {
+          "target": 7309975.0,
+          "actual": 2316380.5,
+          "completion_rate": 0.31687940109234297,
+          "gap": 4993594.5,
+          "forecast": 3973208.4048027447,
+          "forecast_gap": 3336766.5951972553,
+          "trend": [
+            {
+              "month": 1,
+              "target": 798884.9674171866,
+              "actual": 1158666.2100000002,
+              "completion_rate": 1.4503542528106326
+            },
+            {
+              "month": 2,
+              "target": 1066831.588658126,
+              "actual": 1017837.8219999996,
+              "completion_rate": 0.9540754443541071
+            },
+            {
+              "month": 3,
+              "target": 413256.3371914418,
+              "actual": -19042.283000000163,
+              "completion_rate": -0.046078623087584474
+            },
+            {
+              "month": 4,
+              "target": 653752.3818484528,
+              "actual": 389051.1666666666,
+              "completion_rate": 0.5951047789174297
+            },
+            {
+              "month": 5,
+              "target": 527792.6288217766,
+              "actual": 200462.48666666687,
+              "completion_rate": 0.37981297145845216
+            },
+            {
+              "month": 6,
+              "target": 284269.0753192652,
+              "actual": -46742.52333333351,
+              "completion_rate": -0.16443056030923012
+            },
+            {
+              "month": 7,
+              "target": 353875.6891171559,
+              "actual": -159981.73999999996,
+              "completion_rate": -0.4520845735380132
+            },
+            {
+              "month": 8,
+              "target": 369678.6061348564,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 9,
+              "target": 287506.4654874903,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 10,
+              "target": 501501.6352285023,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 11,
+              "target": 687800.3566996087,
+              "actual": null,
+              "completion_rate": null
+            },
+            {
+              "month": 12,
+              "target": 932594.4728653223,
+              "actual": null,
+              "completion_rate": null
+            }
+          ],
+          "trend_coverage": "利润统一为经营利润；同比因缺少可比2025事实暂不计算。",
+          "channels": [
+            {
+              "channel_id": null,
+              "name": "直营/私域",
+              "scope_type": "COMBINED",
+              "target": 1796666.0,
+              "actual": 422943.0,
+              "completion_rate": 0.23540435450996458,
+              "gap": 1373723.0,
+              "forecast": 725459.6912521442,
+              "forecast_gap": 1071206.308747856,
+              "target_source": {
+                "label": "直营/私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B22",
+                "value": 1796666.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "直营/私域",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L22",
+                "value": 422943.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "JOINT",
+              "name": "联营",
+              "scope_type": "CHANNEL",
+              "target": 3000038.0,
+              "actual": 1381396.0,
+              "completion_rate": 0.4604595008463226,
+              "gap": 1618642.0,
+              "forecast": 2369461.4065180104,
+              "forecast_gap": 630576.5934819896,
+              "target_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B23",
+                "value": 3000038.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "联营",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L23",
+                "value": 1381396.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "FRANCHISE",
+              "name": "加盟",
+              "scope_type": "CHANNEL",
+              "target": -187104.0,
+              "actual": -235088.02,
+              "completion_rate": 1.2564564092697108,
+              "gap": 47984.01999999999,
+              "forecast": -403238.45626072044,
+              "forecast_gap": 216134.45626072044,
+              "target_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B24",
+                "value": -187104.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "加盟",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L24",
+                "value": -235088.02,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": null,
+              "name": "线上/天猫抖音",
+              "scope_type": "COMBINED",
+              "target": 1998137.0,
+              "actual": 693522.0,
+              "completion_rate": 0.34708430903386506,
+              "gap": 1304615.0,
+              "forecast": 1189574.61406518,
+              "forecast_gap": 808562.3859348199,
+              "target_source": {
+                "label": "线上/天猫抖音",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B25",
+                "value": 1998137.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "线上/天猫抖音",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L25",
+                "value": 693522.0,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "COLLECTION_STORE",
+              "name": "集合",
+              "scope_type": "CHANNEL",
+              "target": 95506.0,
+              "actual": 53607.52,
+              "completion_rate": 0.561300023035202,
+              "gap": 41898.48,
+              "forecast": 91951.14922813037,
+              "forecast_gap": 3554.8507718696346,
+              "target_source": {
+                "label": "集合",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B26",
+                "value": 95506.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "集合",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L26",
+                "value": 53607.52,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": "SPECIAL_SALE",
+              "name": "特卖",
+              "scope_type": "CHANNEL",
+              "target": 206363.0,
+              "actual": null,
+              "completion_rate": null,
+              "gap": null,
+              "forecast": null,
+              "forecast_gap": null,
+              "target_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B27",
+                "value": 206363.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "特卖",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L27",
+                "value": null,
+                "source_file_id": 1
+              }
+            },
+            {
+              "channel_id": null,
+              "name": "直营新增",
+              "scope_type": "COMBINED",
+              "target": 400369.0,
+              "actual": null,
+              "completion_rate": null,
+              "gap": null,
+              "forecast": null,
+              "forecast_gap": null,
+              "target_source": {
+                "label": "直营新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "B28",
+                "value": 400369.0,
+                "source_file_id": 1
+              },
+              "actual_source": {
+                "label": "直营新增",
+                "workbook": "利润回款汇总.xlsx",
+                "path": "C:\\Users\\yoyo\\Desktop\\AI数据库\\利润回款汇总.xlsx",
+                "sheet": "26年全年目标",
+                "cell": "L28",
+                "value": null,
+                "source_file_id": 1
+              }
+            }
+          ],
+          "margin": null,
+          "margin_note": "销售与利润年度汇总覆盖口径不一致，暂不计算经营利润率",
+          "yoy": null,
+          "mom": null,
+          "comparison_note": "缺少2025同口径利润及完整月度汇总"
+        },
+        "new_stores": {
+          "annual_planned_count": 4,
+          "planned_cumulative": 2,
+          "actual_opened_count": null,
+          "gap": null,
+          "completion_rate": null,
+          "status_note": "实际开店数只认正式开业日期；当前来源缺失，因此不计算实际数量和完成率。"
+        }
+      },
+      "trends": {
+        "sales": [
+          {
+            "month": 1,
+            "target": 4585998.94792342,
+            "actual": 4463899.91,
+            "completion_rate": 0.9733756943013021
+          },
+          {
+            "month": 2,
+            "target": 4838489.913857125,
+            "actual": 4444968.43,
+            "completion_rate": 0.9186685327729825
+          },
+          {
+            "month": 3,
+            "target": 3031633.782586558,
+            "actual": 1719452.19,
+            "completion_rate": 0.5671701509187503
+          },
+          {
+            "month": 4,
+            "target": 3845922.279121036,
+            "actual": 2975385.35,
+            "completion_rate": 0.7736467702826297
+          },
+          {
+            "month": 5,
+            "target": 3818063.167216993,
+            "actual": 2793435.35,
+            "completion_rate": 0.7316367560351681
+          },
+          {
+            "month": 6,
+            "target": 3225752.52226425,
+            "actual": 1904410.96,
+            "completion_rate": 0.5903772675850651
+          },
+          {
+            "month": 7,
+            "target": 2524189.050461881,
+            "actual": 1525038.05,
+            "completion_rate": 0.6041695053391289
+          },
+          {
+            "month": 8,
+            "target": 2840465.310628916,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 9,
+            "target": 2754226.161886271,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 10,
+            "target": 3959781.722936124,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 11,
+            "target": 3957780.470305353,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 12,
+            "target": 4412429.6875,
+            "actual": null,
+            "completion_rate": null
+          }
+        ],
+        "collection": [
+          {
+            "month": 1,
+            "target": 1162550.355693087,
+            "actual": 910275.14,
+            "completion_rate": 0.7829984615654038
+          },
+          {
+            "month": 2,
+            "target": 975262.7884350172,
+            "actual": 733465.48,
+            "completion_rate": 0.7520695844214214
+          },
+          {
+            "month": 3,
+            "target": 678574.441049755,
+            "actual": 474645.15,
+            "completion_rate": 0.6994739578840072
+          },
+          {
+            "month": 4,
+            "target": 993088.601232662,
+            "actual": 454435.47,
+            "completion_rate": 0.4575981130343619
+          },
+          {
+            "month": 5,
+            "target": 719119.680591964,
+            "actual": 399270.13,
+            "completion_rate": 0.5552206966041164
+          },
+          {
+            "month": 6,
+            "target": 883954.047794073,
+            "actual": 348094.69,
+            "completion_rate": 0.39379274394260433
+          },
+          {
+            "month": 7,
+            "target": 645293.796052665,
+            "actual": 237399.56,
+            "completion_rate": 0.3678937585518409
+          },
+          {
+            "month": 8,
+            "target": 517848.908155102,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 9,
+            "target": 541477.4242138721,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 10,
+            "target": 761576.286714239,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 11,
+            "target": 1038583.180061372,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 12,
+            "target": 1135490.91014046,
+            "actual": null,
+            "completion_rate": null
+          }
+        ],
+        "operating_profit": [
+          {
+            "month": 1,
+            "target": 798884.9674171866,
+            "actual": 1158666.2100000002,
+            "completion_rate": 1.4503542528106326
+          },
+          {
+            "month": 2,
+            "target": 1066831.588658126,
+            "actual": 1017837.8219999996,
+            "completion_rate": 0.9540754443541071
+          },
+          {
+            "month": 3,
+            "target": 413256.3371914418,
+            "actual": -19042.283000000163,
+            "completion_rate": -0.046078623087584474
+          },
+          {
+            "month": 4,
+            "target": 653752.3818484528,
+            "actual": 389051.1666666666,
+            "completion_rate": 0.5951047789174297
+          },
+          {
+            "month": 5,
+            "target": 527792.6288217766,
+            "actual": 200462.48666666687,
+            "completion_rate": 0.37981297145845216
+          },
+          {
+            "month": 6,
+            "target": 284269.0753192652,
+            "actual": -46742.52333333351,
+            "completion_rate": -0.16443056030923012
+          },
+          {
+            "month": 7,
+            "target": 353875.6891171559,
+            "actual": -159981.73999999996,
+            "completion_rate": -0.4520845735380132
+          },
+          {
+            "month": 8,
+            "target": 369678.6061348564,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 9,
+            "target": 287506.4654874903,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 10,
+            "target": 501501.6352285023,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 11,
+            "target": 687800.3566996087,
+            "actual": null,
+            "completion_rate": null
+          },
+          {
+            "month": 12,
+            "target": 932594.4728653223,
+            "actual": null,
+            "completion_rate": null
+          }
+        ]
+      },
+      "channel_matrix": [
+        {
+          "channel_id": "DIRECT",
+          "name": "直营",
+          "sales_completion_rate": 0.7514361744301288,
+          "collection_completion_rate": null,
+          "operating_profit": null,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.08158417832453724,
+          "mom_metric": "销售实际",
+          "status": "GREEN",
+          "status_reason": "已具备的数据未触发预警",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "JOINT",
+          "name": "联营",
+          "sales_completion_rate": 0.5685653928225025,
+          "collection_completion_rate": 0.5441207052464492,
+          "operating_profit": 1381396.0,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.2748110922912066,
+          "mom_metric": "销售实际",
+          "status": "YELLOW",
+          "status_reason": "至少一项完成率落后时间进度",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "FRANCHISE",
+          "name": "加盟",
+          "sales_completion_rate": null,
+          "collection_completion_rate": 0.5980863316685353,
+          "operating_profit": -235088.02,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": null,
+          "mom_metric": "销售实际",
+          "status": "RED",
+          "status_reason": "经营利润为负",
+          "sales_data_state": "MISSING"
+        },
+        {
+          "channel_id": "TMALL",
+          "name": "天猫",
+          "sales_completion_rate": 0.42392777143805566,
+          "collection_completion_rate": null,
+          "operating_profit": null,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.39065092561754566,
+          "mom_metric": "销售实际",
+          "status": "YELLOW",
+          "status_reason": "至少一项完成率落后时间进度",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "DOUYIN",
+          "name": "抖音",
+          "sales_completion_rate": 0.3624663437463742,
+          "collection_completion_rate": null,
+          "operating_profit": null,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.24631397784968412,
+          "mom_metric": "销售实际",
+          "status": "RED",
+          "status_reason": "至少一项完成率明显落后时间进度",
+          "sales_data_state": "COMPLETE"
+        },
+        {
+          "channel_id": "WECHAT_PRIVATE",
+          "name": "微信私域",
+          "sales_completion_rate": 0.33792427671641245,
+          "collection_completion_rate": null,
+          "operating_profit": null,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": -0.250578214931779,
+          "mom_metric": "销售实际",
+          "status": "RED",
+          "status_reason": "至少一项完成率明显落后时间进度",
+          "sales_data_state": "PARTIAL_TARGET"
+        },
+        {
+          "channel_id": "SPECIAL_SALE",
+          "name": "特卖",
+          "sales_completion_rate": null,
+          "collection_completion_rate": 0.0,
+          "operating_profit": null,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": null,
+          "mom_metric": "销售实际",
+          "status": "RED",
+          "status_reason": "至少一项完成率明显落后时间进度",
+          "sales_data_state": "MISSING"
+        },
+        {
+          "channel_id": "COLLECTION_STORE",
+          "name": "集合",
+          "sales_completion_rate": 0.16021698113207547,
+          "collection_completion_rate": null,
+          "operating_profit": 53607.52,
+          "yoy": null,
+          "yoy_note": "缺少2025同口径渠道数据",
+          "mom": 0.0998639984456966,
+          "mom_metric": "销售实际",
+          "status": "RED",
+          "status_reason": "至少一项完成率明显落后时间进度",
+          "sales_data_state": "COMPLETE"
+        }
+      ]
+    }
+  ],
+  "scope_notes": [
+    "首页数字只汇总Phase 3—5已确认标准数据，不回读Excel。",
+    "销售总览仅汇总目标与实际均完整的可比渠道；渠道覆盖范围在卡片中明示。",
+    "回款月度趋势仅覆盖有明确财务回款行的线上经营单元，年度卡片使用财务汇总口径。",
+    "同比、利润环比、经营利润率及新店实际数在缺少同口径依据时保持为空。",
+    "Top异常榜属于Phase 7，本阶段不提前生成。"
+  ],
+  "generated_at": "2026-09-05T14:19:48+08:00"
+}
